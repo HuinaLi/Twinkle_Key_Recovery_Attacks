@@ -1,0 +1,112 @@
+============================================================
+INput: [v(0), k(1), k(2), k(3)]
+OUTput: v(0)*k(2)*k(3) + v(0)*k(3) + v(0) + k(1)*k(2) + k(1)*k(3) + k(2)*k(3), v(0)*k(1) + v(0)*k(3) + k(1) + k(2), v(0)*k(1)*k(2) + v(0) + k(1)*k(3) + k(1) + k(2)*k(3) + k(3), v(0) + k(1)*k(2) + k(2)*k(3) + k(2) + k(3)
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 0
+	input: [v(0), 0, k(2), 0]
+	output: v(0), k(2), v(0), v(0) + k(2)
+	Involved Keys []
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 1
+	input: [v(0), 1, k(2), 1]
+	output: v(0)*k(2) + 1, k(2) + 1, v(0)*k(2) + v(0) + k(2) + 1, v(0) + k(2) + 1
+	Involved Keys [('w0', v(0)*k(2)), ('w2', v(0)*k(2))]
+============================================================
+INput: [v(0), k(1), k(2), k(3) + 1]
+OUTput: v(0)*k(2)*k(3) + v(0)*k(2) + v(0)*k(3) + k(1)*k(2) + k(1)*k(3) + k(1) + k(2)*k(3) + k(2), v(0)*k(1) + v(0)*k(3) + v(0) + k(1) + k(2), v(0)*k(1)*k(2) + v(0) + k(1)*k(3) + k(2)*k(3) + k(2) + k(3) + 1, v(0) + k(1)*k(2) + k(2)*k(3) + k(3) + 1
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 0
+	input: [v(0), 0, k(2), 1]
+	output: v(0)*k(2) + k(2), v(0) + k(2), v(0) + k(2) + 1, v(0) + 1
+	Involved Keys [('w0', v(0)*k(2))]
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 1
+	input: [v(0), 1, k(2), 0]
+	output: v(0) + k(2), v(0) + k(2) + 1, v(0)*k(2) + v(0) + 1, v(0)
+	Involved Keys [('w2', v(0)*k(2))]
+============================================================
+INput: [v(0), k(1), k(2) + 1, k(3)]
+OUTput: v(0)*k(2)*k(3) + v(0) + k(1)*k(2) + k(1)*k(3) + k(1) + k(2)*k(3) + k(3), v(0)*k(1) + v(0)*k(3) + k(1) + k(2) + 1, v(0)*k(1)*k(2) + v(0)*k(1) + v(0) + k(1)*k(3) + k(1) + k(2)*k(3), v(0) + k(1)*k(2) + k(1) + k(2)*k(3) + k(2) + 1
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 1
+	input: [v(0), 0, k(2) + 1, 1]
+	output: v(0)*k(2) + v(0) + k(2) + 1, v(0) + k(2) + 1, v(0) + k(2), v(0) + 1
+	Involved Keys [('w0', v(0)*k(2))]
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 0
+	input: [v(0), 1, k(2) + 1, 0]
+	output: v(0) + k(2) + 1, v(0) + k(2), v(0)*k(2) + 1, v(0)
+	Involved Keys [('w2', v(0)*k(2))]
+============================================================
+INput: [v(0), k(1), k(2) + 1, k(3) + 1]
+OUTput: v(0)*k(2)*k(3) + v(0)*k(2) + v(0) + k(1)*k(2) + k(1)*k(3) + k(2)*k(3) + k(2) + k(3) + 1, v(0)*k(1) + v(0)*k(3) + v(0) + k(1) + k(2) + 1, v(0)*k(1)*k(2) + v(0)*k(1) + v(0) + k(1)*k(3) + k(2)*k(3) + k(2), v(0) + k(1)*k(2) + k(1) + k(2)*k(3) + 1
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 1
+	input: [v(0), 0, k(2) + 1, 0]
+	output: v(0), k(2) + 1, v(0), v(0) + k(2) + 1
+	Involved Keys []
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 0
+	input: [v(0), 1, k(2) + 1, 1]
+	output: v(0)*k(2) + v(0) + 1, k(2), v(0)*k(2) + k(2), v(0) + k(2)
+	Involved Keys [('w0', v(0)*k(2)), ('w2', v(0)*k(2))]
+============================================================
+INput: [v(0), k(1) + 1, k(2), k(3)]
+OUTput: v(0)*k(2)*k(3) + v(0)*k(3) + v(0) + k(1)*k(2) + k(1)*k(3) + k(2)*k(3) + k(2) + k(3), v(0)*k(1) + v(0)*k(3) + v(0) + k(1) + k(2) + 1, v(0)*k(1)*k(2) + v(0)*k(2) + v(0) + k(1)*k(3) + k(1) + k(2)*k(3) + 1, v(0) + k(1)*k(2) + k(2)*k(3) + k(3)
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 0
+	input: [v(0), 1, k(2), 0]
+	output: v(0) + k(2), v(0) + k(2) + 1, v(0)*k(2) + v(0) + 1, v(0)
+	Involved Keys [('w2', v(0)*k(2))]
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 1
+	input: [v(0), 0, k(2), 1]
+	output: v(0)*k(2) + k(2), v(0) + k(2), v(0) + k(2) + 1, v(0) + 1
+	Involved Keys [('w0', v(0)*k(2))]
+============================================================
+INput: [v(0), k(1) + 1, k(2), k(3) + 1]
+OUTput: v(0)*k(2)*k(3) + v(0)*k(2) + v(0)*k(3) + k(1)*k(2) + k(1)*k(3) + k(1) + k(2)*k(3) + k(3) + 1, v(0)*k(1) + v(0)*k(3) + k(1) + k(2) + 1, v(0)*k(1)*k(2) + v(0)*k(2) + v(0) + k(1)*k(3) + k(2)*k(3) + k(2) + 1, v(0) + k(1)*k(2) + k(2)*k(3) + k(2) + k(3) + 1
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 0
+	input: [v(0), 1, k(2), 1]
+	output: v(0)*k(2) + 1, k(2) + 1, v(0)*k(2) + v(0) + k(2) + 1, v(0) + k(2) + 1
+	Involved Keys [('w0', v(0)*k(2)), ('w2', v(0)*k(2))]
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 1
+	input: [v(0), 0, k(2), 0]
+	output: v(0), k(2), v(0), v(0) + k(2)
+	Involved Keys []
+============================================================
+INput: [v(0), k(1) + 1, k(2) + 1, k(3)]
+OUTput: v(0)*k(2)*k(3) + v(0) + k(1)*k(2) + k(1)*k(3) + k(1) + k(2)*k(3) + k(2) + 1, v(0)*k(1) + v(0)*k(3) + v(0) + k(1) + k(2), v(0)*k(1)*k(2) + v(0)*k(1) + v(0)*k(2) + k(1)*k(3) + k(1) + k(2)*k(3) + k(3) + 1, v(0) + k(1)*k(2) + k(1) + k(2)*k(3)
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 1
+	input: [v(0), 1, k(2) + 1, 1]
+	output: v(0)*k(2) + v(0) + 1, k(2), v(0)*k(2) + k(2), v(0) + k(2)
+	Involved Keys [('w0', v(0)*k(2)), ('w2', v(0)*k(2))]
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 0
+	input: [v(0), 0, k(2) + 1, 0]
+	output: v(0), k(2) + 1, v(0), v(0) + k(2) + 1
+	Involved Keys []
+============================================================
+INput: [v(0), k(1) + 1, k(2) + 1, k(3) + 1]
+OUTput: v(0)*k(2)*k(3) + v(0)*k(2) + v(0) + k(1)*k(2) + k(1)*k(3) + k(2)*k(3) + 1, v(0)*k(1) + v(0)*k(3) + k(1) + k(2), v(0)*k(1)*k(2) + v(0)*k(1) + v(0)*k(2) + k(1)*k(3) + k(2)*k(3) + k(2) + k(3), v(0) + k(1)*k(2) + k(1) + k(2)*k(3) + k(2)
+Adding Auxiable Vars v2 = k1_val + k3_val
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 0, k(2), 1
+	input: [v(0), 1, k(2) + 1, 0]
+	output: v(0) + k(2) + 1, v(0) + k(2), v(0)*k(2) + 1, v(0)
+	Involved Keys [('w2', v(0)*k(2))]
+Aux var: v2 = k1_val + k3_val
+	keys: freek0, 1, k(2), 0
+	input: [v(0), 0, k(2) + 1, 1]
+	output: v(0)*k(2) + v(0) + k(2) + 1, v(0) + k(2) + 1, v(0) + k(2), v(0) + 1
+	Involved Keys [('w0', v(0)*k(2))]

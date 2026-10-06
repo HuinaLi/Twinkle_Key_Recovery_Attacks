@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated operator CNF / PLA (local build outputs)
+operator_espresso.cnf
+operator_espresso.pla
+operator_sympy.cnf

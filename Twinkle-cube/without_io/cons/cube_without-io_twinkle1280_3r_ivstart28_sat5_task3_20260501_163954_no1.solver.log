@@ -1,0 +1,699 @@
+c Treengeling Cube and Conquer SAT Solver
+c 
+c Version 1.0.0 89a167d0d2efe98d983c87b5b84175b40ea55842
+c 
+c Copyright (C) 2010-2016 Armin Biere JKU Linz Austria.
+c All rights reserved.
+c 
+c released Sun Apr  5 23:26:06 CST 2026
+c compiled Sun Apr  5 23:26:06 CST 2026
+c 
+c gcc (conda-forge gcc 15.2.0-18) 15.2.0
+c -W -Wall -O3 -DNLGLOG -DNDEBUG -DNCHKSOL -DNLGLDRUPLIG -DNLGLYALSAT
+c -DNLGLFILES -DNLGLDEMA
+c Linux bzz-PowerEdge-R750 5.15.0-139-generic x86_64
+c 
+c verbose level 0
+c will NOT print statistics for each solver instance
+c will print satisfying assignment
+c 
+c splitting small nodes first (no '-b' option)
+c asymmetric splitting ('--asymmetric')
+c portfolio option fuzzing disabled (no '--portfolio' option)
+c full search/simplification round interval 10
+c tree-based look-ahead up to depth 10
+c relevance based look-ahead starts at depth 11
+c no randomization in lookahead
+c 
+c 'sysconf' reports 112 processors online
+c found 28 unique core ids in '/proc/cpuinfo'
+c found 2 unique physical ids in '/proc/cpuinfo'
+c 56 cores = 28 core times 2 physical ids in '/proc/cpuinfo'
+c found Intel as vendor in '/proc/cpuinfo'
+c 'sysconf' result off by a factor of 2.000000 on Intel
+c trusting 'sysconf' on Intel (assuming HyperThreading)
+c assuming cores = number of processors reported by 'sysconf' = 112
+c maximum 5 workers as specified ('-t 5')
+c using one worker for additional parallel solver instance
+c maximum of 32 active nodes (no '-a <nodes>' option)
+c default ratio of split nodes is 50%
+c 
+c 263536484 KB total memory according to '/proc/meminfo'
+c hard memory limit of 257359 MB (no '-g' nor '-m' option)
+c soft memory limit of 85786 MB
+c 
+c default minimum conflict limit of 1000 conflicts
+c default initial conflict limit of 10000 conflicts
+c default maximum conflict limit of 100000 conflicts
+c 
+c default optimization level 10
+c 
+c initializing root solver instance
+c reading /home/author/Twinkle/without_io/cons/cube_without-io_twinkle1280_3r_ivstart28_sat5_task3_20260501_163954.cnf
+c found 'p cnf 24990 123740' header
+c parsed 385756 literals in 123740 clauses in 0.21 seconds
+c cloning and starting first additional parallel solver instance
+c simplifying root solver instance with optimization level 10
+c root solver instance optimization with result 0 took 15.36 seconds
+c forking root solver instance
+c cloning and starting second additional parallel solver instance
+c [0 1] 15.7 sec, 11 MB, 1 nodes +1 -0 s0, vars[11984..11984..11984]
+c  0 searching 1 out of 1 nodes 100% limit 1000 forced
+c  0 average actual conflicts 1002 median 1002
+c  1 simplify  1 out of 1 nodes 100%
+c  1 lookahead 1 out of 1 nodes 100% on nodes [0..0]
+c  1 splitting 1 out of 1 nodes 100%
+c (1 2) 19.8 sec, 18 MB, 2 nodes +2 -0 s0, vars[11171..11937..11937]
+c  1 searching 2 out of 2 nodes 100% limit 1000 forced
+c  1 average actual conflicts 1000 median 1001
+c  2 simplify  2 out of 2 nodes 100%
+c  2 lookahead 2 out of 2 nodes 100% on nodes [0..1]
+c  2 splitting 2 out of 2 nodes 100%
+c (2 4) 21.7 sec, 29 MB, 4 nodes +2 -0 s0, vars[8181..11904..11904]
+c  2 searching 4 out of 4 nodes 100% limit 1000 forced
+c  2 average actual conflicts 1000 median 1000
+c  3 simplify  4 out of 4 nodes 100%
+c  3 lookahead 4 out of 4 nodes 100% on nodes [0..3]
+c  3 splitting 4 out of 4 nodes 100%
+c (3 8) 23.6 sec, 36 MB, 8 nodes +4 -0 s0, vars[3932..11903..11903]
+c  3 searching 8 out of 8 nodes 100% limit 1000 forced
+c  3 average actual conflicts 1000 median 1000
+c  4 simplify  8 out of 8 nodes 100%
+c  4 lookahead 8 out of 8 nodes 100% on nodes [0..7]
+c  4 splitting 8 out of 8 nodes 100%
+c (4 16) 26.3 sec, 57 MB, 16 nodes +8 -0 s0, vars[2893..11898..11898]
+c  4 searching 16 out of 16 nodes 100% limit 1000 forced
+c  4 average actual conflicts 938 median 1000
+c  5 simplify  15 out of 15 nodes 100%
+c  5 lookahead 15 out of 15 nodes 100% on nodes [0..14]
+c  5 splitting 15 out of 15 nodes 100%
+c (5 31) 30.8 sec, 91 MB, 30 nodes +15 -1 s0, vars[2270..11895..11895]
+c  5 searching 30 out of 30 nodes 100% limit 1000 forced
+c  5 average actual conflicts 934 median 1000
+c  6 simplify  28 out of 28 nodes 100%
+c  6 lookahead 14 out of 28 nodes 50% on nodes [14..27]
+c  6 splitting 14 out of 28 nodes 50%
+c (6 45) 37.5 sec, 125 MB, 42 nodes +14 -2 s0, vars[2660..11874..11886]
+c  6 searching 32 out of 42 nodes 76% limit 10000
+c  6 average actual conflicts 9124 median 10000
+c  7 simplify  32 out of 38 nodes 84%
+c  7 lookahead 16 out of 38 nodes 42% on nodes [16..31]
+c  7 splitting 16 out of 38 nodes 42%
+c (7 61) 69.3 sec, 167 MB, 54 nodes +16 -4 s0, vars[2764..11850..11886]
+c  7 searching 32 out of 54 nodes 59% limit 9000
+c  7 average actual conflicts 8484 median 9000
+c  8 simplify  32 out of 52 nodes 62%
+c  8 lookahead 16 out of 52 nodes 31% on nodes [16..31]
+c  8 splitting 16 out of 52 nodes 31%
+c (8 77) 84.4 sec, 211 MB, 68 nodes +16 -2 s0, vars[2738..7650..11886]
+c  8 searching 32 out of 68 nodes 47% limit 8100
+c  8 average actual conflicts 7847 median 8100
+c  9 simplify  32 out of 67 nodes 48%
+c  9 lookahead 16 out of 67 nodes 24% on nodes [16..31]
+c  9 splitting 16 out of 67 nodes 24%
+c (9 93) 96.6 sec, 248 MB, 83 nodes +16 -1 s0, vars[2738..5189..11886]
+c  9 searching 32 out of 83 nodes 39% limit 7290
+c  9 average actual conflicts 6607 median 7290
+c  10 simplify  80 out of 80 nodes 100%
+c  10 lookahead 16 out of 80 nodes 20% on nodes [16..31]
+c  10 splitting 16 out of 80 nodes 20%
+c [10 109] 110.3 sec, 267 MB, 96 nodes +16 -3 s0, vars[2643..4605..11874]
+c  10 searching 64 out of 96 nodes 67% limit 6561
+c  10 average actual conflicts 6356 median 6561
+c  11 simplify  32 out of 94 nodes 34%
+c  11 lookahead 16 out of 94 nodes 17% on nodes [16..31]
+c  11 splitting 16 out of 94 nodes 17%
+c (11 125) 147.4 sec, 291 MB, 110 nodes +16 -2 s0, vars[2708..3544..11874]
+c  11 searching 32 out of 110 nodes 29% limit 5904
+c  11 average actual conflicts 5805 median 5904
+c  12 simplify  32 out of 109 nodes 29%
+c  12 lookahead 16 out of 109 nodes 15% on nodes [16..31]
+c  12 splitting 16 out of 109 nodes 15%
+c (12 141) 161.2 sec, 303 MB, 125 nodes +16 -1 s0, vars[2748..3327..11874]
+c  12 searching 32 out of 125 nodes 26% limit 5313
+c  12 average actual conflicts 5002 median 5314
+c  13 simplify  32 out of 123 nodes 26%
+c  13 lookahead 16 out of 123 nodes 13% on nodes [16..31]
+c  13 splitting 16 out of 123 nodes 13%
+c (13 157) 173.2 sec, 323 MB, 139 nodes +16 -2 s0, vars[2748..3017..11874]
+c  13 searching 32 out of 139 nodes 23% limit 4782
+c  13 average actual conflicts 4782 median 4783
+c  14 simplify  32 out of 139 nodes 23%
+c  14 lookahead 16 out of 139 nodes 12% on nodes [16..31]
+c  14 splitting 16 out of 139 nodes 12%
+c (14 173) 183.6 sec, 346 MB, 155 nodes +16 -0 s0, vars[2748..2889..11874]
+c  14 searching 32 out of 155 nodes 21% limit 2391
+c  14 average actual conflicts 2168 median 2391
+c  15 simplify  32 out of 150 nodes 21%
+c  15 lookahead 16 out of 150 nodes 11% on nodes [16..31]
+c  15 splitting 16 out of 150 nodes 11%
+c (15 189) 190.1 sec, 366 MB, 166 nodes +16 -5 s0, vars[2622..2851..11874]
+c  15 searching 32 out of 166 nodes 19% limit 2151
+c  15 average actual conflicts 1899 median 2151
+c  16 simplify  32 out of 160 nodes 20%
+c  16 lookahead 16 out of 160 nodes 10% on nodes [16..31]
+c  16 splitting 16 out of 160 nodes 10%
+c (16 205) 196.8 sec, 390 MB, 176 nodes +16 -6 s0, vars[2604..2821..11874]
+c  16 searching 32 out of 176 nodes 18% limit 1935
+c  16 average actual conflicts 1805 median 1936
+c  17 simplify  32 out of 173 nodes 18%
+c  17 lookahead 16 out of 173 nodes 9% on nodes [16..31]
+c  17 splitting 16 out of 173 nodes 9%
+c (17 221) 202.6 sec, 394 MB, 189 nodes +16 -3 s0, vars[2579..2779..11874]
+c  17 searching 32 out of 189 nodes 17% limit 1742
+c  17 average actual conflicts 1606 median 1742
+c  18 simplify  32 out of 184 nodes 17%
+c  18 lookahead 16 out of 184 nodes 9% on nodes [16..31]
+c  18 splitting 16 out of 184 nodes 9%
+c (18 237) 208.2 sec, 409 MB, 200 nodes +16 -5 s0, vars[2044..2742..11874]
+c  18 searching 32 out of 200 nodes 16% limit 1567
+c  18 average actual conflicts 1114 median 1567
+c  19 simplify  32 out of 187 nodes 17%
+c  19 lookahead 16 out of 186 nodes 9% on nodes [16..31]
+c  19 splitting 16 out of 186 nodes 9%
+c (19 253) 212.9 sec, 421 MB, 202 nodes +16 -14 s1, vars[2455..2730..11874]
+c  19 searching 32 out of 202 nodes 16% limit 1410
+c  19 average actual conflicts 1138 median 1410
+c  20 simplify  128 out of 192 nodes 67%
+c  20 lookahead 16 out of 192 nodes 8% on nodes [16..31]
+c  20 splitting 16 out of 192 nodes 8%
+c [20 269] 224.3 sec, 417 MB, 208 nodes +16 -10 s0, vars[2261..2635..11874]
+c  20 searching 64 out of 208 nodes 31% limit 1269
+c  20 average actual conflicts 1119 median 1269
+c  21 simplify  32 out of 195 nodes 16%
+c  21 lookahead 16 out of 195 nodes 8% on nodes [16..31]
+c  21 splitting 16 out of 195 nodes 8%
+c (21 285) 230.3 sec, 423 MB, 211 nodes +16 -13 s0, vars[2308..2586..11874]
+c  21 searching 32 out of 211 nodes 15% limit 1142
+c  21 average actual conflicts 828 median 1142
+c  22 simplify  32 out of 197 nodes 16%
+c  22 lookahead 16 out of 196 nodes 8% on nodes [16..31]
+c  22 splitting 16 out of 196 nodes 8%
+c (22 301) 234.0 sec, 425 MB, 212 nodes +16 -15 s1, vars[2194..2579..11874]
+c  22 searching 32 out of 212 nodes 15% limit 1027
+c  22 average actual conflicts 790 median 1027
+c  23 simplify  32 out of 199 nodes 16%
+c  23 lookahead 16 out of 198 nodes 8% on nodes [16..31]
+c  23 splitting 16 out of 198 nodes 8%
+c (23 317) 237.7 sec, 426 MB, 214 nodes +16 -14 s1, vars[2244..2508..11874]
+c  23 searching 32 out of 214 nodes 15% limit 1000
+c  23 average actual conflicts 707 median 1000
+c  24 simplify  32 out of 200 nodes 16%
+c  24 lookahead 16 out of 200 nodes 8% on nodes [16..31]
+c  24 splitting 16 out of 200 nodes 8%
+c (24 333) 241.3 sec, 427 MB, 215 nodes +16 -15 s0, vars[2188..2498..11874]
+c  24 searching 32 out of 215 nodes 15% limit 1000
+c  24 average actual conflicts 770 median 1000
+c  25 simplify  32 out of 202 nodes 16%
+c  25 lookahead 16 out of 202 nodes 8% on nodes [16..31]
+c  25 splitting 16 out of 202 nodes 8%
+c (25 349) 245.3 sec, 424 MB, 217 nodes +16 -14 s0, vars[2112..2462..11874]
+c  25 searching 32 out of 217 nodes 15% limit 1000
+c  25 average actual conflicts 646 median 693
+c  26 simplify  32 out of 196 nodes 16%
+c  26 lookahead 16 out of 195 nodes 8% on nodes [16..31]
+c  26 splitting 16 out of 195 nodes 8%
+c (26 365) 248.7 sec, 416 MB, 210 nodes +16 -23 s1, vars[1998..2508..11874]
+c  26 searching 32 out of 210 nodes 15% limit 1386
+c  26 average actual conflicts 1049 median 1386
+c  27 simplify  32 out of 196 nodes 16%
+c  27 lookahead 16 out of 195 nodes 8% on nodes [16..31]
+c  27 splitting 16 out of 195 nodes 8%
+c (27 381) 252.5 sec, 416 MB, 211 nodes +16 -15 s1, vars[2121..2476..11874]
+c  27 searching 32 out of 211 nodes 15% limit 1247
+c  27 average actual conflicts 807 median 1237
+c  28 simplify  32 out of 194 nodes 16%
+c  28 lookahead 16 out of 194 nodes 8% on nodes [16..31]
+c  28 splitting 16 out of 194 nodes 8%
+c (28 397) 256.1 sec, 415 MB, 210 nodes +16 -17 s0, vars[2163..2488..11874]
+c  28 searching 32 out of 210 nodes 15% limit 2474
+c  28 average actual conflicts 1117 median 601
+c  29 simplify  32 out of 187 nodes 17%
+c  29 lookahead 16 out of 186 nodes 9% on nodes [16..31]
+c  29 splitting 16 out of 186 nodes 9%
+c (29 413) 260.9 sec, 413 MB, 201 nodes +16 -25 s1, vars[1778..2644..11874]
+c  29 searching 32 out of 201 nodes 16% limit 1202
+c  29 average actual conflicts 903 median 1202
+c  30 simplify  128 out of 189 nodes 68%
+c  30 lookahead 16 out of 188 nodes 9% on nodes [16..31]
+c  30 splitting 16 out of 188 nodes 9%
+c [30 429] 273.8 sec, 415 MB, 202 nodes +16 -15 s1, vars[2140..2613..11874]
+c  30 searching 64 out of 202 nodes 32% limit 1081
+c  30 average actual conflicts 878 median 1081
+c  31 simplify  32 out of 185 nodes 17%
+c  31 lookahead 16 out of 185 nodes 9% on nodes [16..31]
+c  31 splitting 16 out of 185 nodes 9%
+c (31 445) 278.8 sec, 410 MB, 201 nodes +16 -17 s0, vars[2115..2581..11874]
+c  31 searching 32 out of 201 nodes 16% limit 2162
+c  31 average actual conflicts 1414 median 1751
+c  32 simplify  32 out of 183 nodes 17%
+c  32 lookahead 16 out of 183 nodes 9% on nodes [16..31]
+c  32 splitting 16 out of 183 nodes 9%
+c (32 461) 283.4 sec, 409 MB, 199 nodes +16 -18 s0, vars[2218..2634..11874]
+c  32 searching 32 out of 199 nodes 16% limit 3502
+c  32 average actual conflicts 1859 median 1548
+c  33 simplify  32 out of 177 nodes 18%
+c  33 lookahead 16 out of 177 nodes 9% on nodes [16..31]
+c  33 splitting 16 out of 177 nodes 9%
+c (33 477) 288.9 sec, 390 MB, 193 nodes +16 -22 s0, vars[1895..2665..11874]
+c  33 searching 32 out of 193 nodes 17% limit 3096
+c  33 average actual conflicts 2262 median 2765
+c  34 simplify  32 out of 174 nodes 18%
+c  34 lookahead 16 out of 174 nodes 9% on nodes [16..31]
+c  34 splitting 16 out of 174 nodes 9%
+c (34 493) 295.0 sec, 397 MB, 190 nodes +16 -19 s0, vars[2251..2704..11874]
+c  34 searching 32 out of 190 nodes 17% limit 5530
+c  34 average actual conflicts 3707 median 5035
+c  35 simplify  32 out of 173 nodes 18%
+c  35 lookahead 16 out of 173 nodes 9% on nodes [16..31]
+c  35 splitting 16 out of 173 nodes 9%
+c (35 509) 303.0 sec, 402 MB, 188 nodes +16 -18 s0, vars[2264..2728..11874]
+c  35 searching 32 out of 188 nodes 17% limit 10070
+c  35 average actual conflicts 5152 median 4146
+c  36 simplify  32 out of 164 nodes 20%
+c  36 lookahead 16 out of 164 nodes 10% on nodes [16..31]
+c  36 splitting 16 out of 164 nodes 10%
+c (36 525) 313.2 sec, 385 MB, 180 nodes +16 -24 s0, vars[2287..2763..11874]
+c  36 searching 32 out of 180 nodes 18% limit 8292
+c  36 average actual conflicts 4930 median 5827
+c  37 simplify  32 out of 162 nodes 20%
+c  37 lookahead 16 out of 162 nodes 10% on nodes [16..31]
+c  37 splitting 16 out of 162 nodes 10%
+c (37 541) 324.2 sec, 371 MB, 178 nodes +16 -18 s0, vars[2546..2749..11874]
+c  37 searching 32 out of 178 nodes 18% limit 11654
+c  37 average actual conflicts 6345 median 5868
+c  38 simplify  32 out of 156 nodes 21%
+c  38 lookahead 16 out of 156 nodes 10% on nodes [16..31]
+c  38 splitting 16 out of 156 nodes 10%
+c (38 557) 336.2 sec, 374 MB, 172 nodes +16 -22 s0, vars[2660..2787..11874]
+c  38 searching 32 out of 172 nodes 19% limit 11736
+c  38 average actual conflicts 7869 median 11736
+c  39 simplify  32 out of 156 nodes 21%
+c  39 lookahead 16 out of 156 nodes 10% on nodes [16..31]
+c  39 splitting 16 out of 156 nodes 10%
+c (39 573) 351.7 sec, 375 MB, 172 nodes +16 -16 s0, vars[2635..2777..11874]
+c  39 searching 32 out of 172 nodes 19% limit 11736
+c  39 average actual conflicts 7252 median 8433
+c  40 simplify  128 out of 152 nodes 84%
+c  40 lookahead 16 out of 152 nodes 11% on nodes [16..31]
+c  40 splitting 16 out of 152 nodes 11%
+c [40 589] 366.0 sec, 363 MB, 167 nodes +16 -21 s0, vars[2601..2778..11874]
+c  40 searching 64 out of 167 nodes 38% limit 16866
+c  40 average actual conflicts 10927 median 15604
+c  41 simplify  32 out of 134 nodes 24%
+c  41 lookahead 16 out of 134 nodes 12% on nodes [16..31]
+c  41 splitting 16 out of 134 nodes 12%
+c (41 605) 405.1 sec, 344 MB, 150 nodes +16 -33 s0, vars[2454..2856..11874]
+c  41 searching 32 out of 150 nodes 21% limit 31208
+c  41 average actual conflicts 15009 median 13377
+c  42 simplify  32 out of 126 nodes 25%
+c  42 lookahead 16 out of 126 nodes 13% on nodes [16..31]
+c  42 splitting 16 out of 126 nodes 13%
+c (42 621) 436.5 sec, 334 MB, 142 nodes +16 -24 s0, vars[2193..2998..11874]
+c  42 searching 32 out of 142 nodes 23% limit 26754
+c  42 average actual conflicts 16671 median 24739
+c  43 simplify  32 out of 125 nodes 26%
+c  43 lookahead 16 out of 123 nodes 13% on nodes [16..31]
+c  43 splitting 16 out of 123 nodes 13%
+c (43 637) 470.9 sec, 331 MB, 139 nodes +16 -19 s2, vars[2346..3050..11874]
+c  43 searching 32 out of 139 nodes 23% limit 49478
+c  43 average actual conflicts 17398 median 7516
+c  44 simplify  32 out of 115 nodes 28%
+c  44 lookahead 16 out of 115 nodes 14% on nodes [16..31]
+c  44 splitting 16 out of 115 nodes 14%
+c (44 653) 510.6 sec, 320 MB, 130 nodes +16 -25 s0, vars[2753..3291..11874]
+c  44 searching 32 out of 130 nodes 25% limit 15032
+c  44 average actual conflicts 8191 median 9550
+c  45 simplify  32 out of 108 nodes 30%
+c  45 lookahead 16 out of 108 nodes 15% on nodes [16..31]
+c  45 splitting 16 out of 108 nodes 15%
+c (45 669) 529.2 sec, 312 MB, 124 nodes +16 -22 s0, vars[2430..3378..11874]
+c  45 searching 32 out of 124 nodes 26% limit 19100
+c  45 average actual conflicts 14752 median 19100
+c  46 simplify  32 out of 111 nodes 29%
+c  46 lookahead 16 out of 111 nodes 14% on nodes [16..31]
+c  46 splitting 16 out of 111 nodes 14%
+c (46 685) 561.2 sec, 321 MB, 127 nodes +16 -13 s0, vars[2620..3377..11874]
+c  46 searching 32 out of 127 nodes 25% limit 17190
+c  46 average actual conflicts 13215 median 17190
+c  47 simplify  32 out of 112 nodes 29%
+c  47 lookahead 16 out of 112 nodes 14% on nodes [16..31]
+c  47 splitting 16 out of 112 nodes 14%
+c (47 701) 591.1 sec, 312 MB, 128 nodes +16 -15 s0, vars[2794..3353..11874]
+c  47 searching 32 out of 128 nodes 25% limit 15471
+c  47 average actual conflicts 10379 median 12927
+c  48 simplify  32 out of 110 nodes 29%
+c  48 lookahead 16 out of 110 nodes 15% on nodes [16..31]
+c  48 splitting 16 out of 110 nodes 15%
+c (48 717) 614.7 sec, 310 MB, 126 nodes +16 -18 s0, vars[2645..3386..11874]
+c  48 searching 32 out of 126 nodes 25% limit 25854
+c  48 average actual conflicts 15105 median 19971
+c  49 simplify  32 out of 109 nodes 29%
+c  49 lookahead 16 out of 109 nodes 15% on nodes [16..31]
+c  49 splitting 16 out of 109 nodes 15%
+c (49 733) 644.6 sec, 319 MB, 125 nodes +16 -17 s0, vars[2372..3813..11874]
+c  49 searching 32 out of 125 nodes 26% limit 39942
+c  49 average actual conflicts 18921 median 13688
+c  50 simplify  101 out of 101 nodes 100%
+c  50 lookahead 16 out of 101 nodes 16% on nodes [16..31]
+c  50 splitting 16 out of 101 nodes 16%
+c [50 749] 659.2 sec, 297 MB, 117 nodes +16 -24 s0, vars[2457..4474..11874]
+c  50 searching 64 out of 117 nodes 55% limit 27376
+c  50 average actual conflicts 24220 median 27376
+c  51 simplify  32 out of 105 nodes 30%
+c  51 lookahead 16 out of 105 nodes 15% on nodes [16..31]
+c  51 splitting 16 out of 105 nodes 15%
+c (51 765) 750.9 sec, 332 MB, 121 nodes +16 -12 s0, vars[2810..4450..11874]
+c  51 searching 32 out of 121 nodes 26% limit 24638
+c  51 average actual conflicts 22112 median 24638
+c  52 simplify  32 out of 116 nodes 28%
+c  52 lookahead 16 out of 116 nodes 14% on nodes [16..31]
+c  52 splitting 16 out of 116 nodes 14%
+c (52 781) 806.5 sec, 351 MB, 132 nodes +16 -5 s0, vars[2791..4362..11874]
+c  52 searching 32 out of 132 nodes 24% limit 22174
+c  52 average actual conflicts 15222 median 22174
+c  53 simplify  32 out of 117 nodes 27%
+c  53 lookahead 16 out of 117 nodes 14% on nodes [16..31]
+c  53 splitting 16 out of 117 nodes 14%
+c (53 797) 845.1 sec, 366 MB, 133 nodes +16 -15 s0, vars[2781..4397..11874]
+c  53 searching 32 out of 133 nodes 24% limit 19956
+c  53 average actual conflicts 14998 median 19735
+c  54 simplify  32 out of 116 nodes 28%
+c  54 lookahead 16 out of 116 nodes 14% on nodes [16..31]
+c  54 splitting 16 out of 116 nodes 14%
+c (54 813) 883.2 sec, 349 MB, 132 nodes +16 -17 s0, vars[2771..4415..11874]
+c  54 searching 32 out of 132 nodes 24% limit 39470
+c  54 average actual conflicts 23879 median 29774
+c  55 simplify  32 out of 115 nodes 28%
+c  55 lookahead 16 out of 115 nodes 14% on nodes [16..31]
+c  55 splitting 16 out of 115 nodes 14%
+c (55 829) 949.0 sec, 353 MB, 131 nodes +16 -17 s0, vars[2771..4424..11874]
+c  55 searching 32 out of 131 nodes 24% limit 59548
+c  55 average actual conflicts 34843 median 41583
+c  56 simplify  32 out of 110 nodes 29%
+c  56 lookahead 16 out of 110 nodes 15% on nodes [16..31]
+c  56 splitting 16 out of 110 nodes 15%
+c (56 845) 1046.6 sec, 341 MB, 126 nodes +16 -21 s0, vars[2753..4437..11874]
+c  56 searching 32 out of 126 nodes 25% limit 83166
+c  56 average actual conflicts 40703 median 32969
+c  57 simplify  32 out of 101 nodes 32%
+c  57 lookahead 16 out of 101 nodes 16% on nodes [16..31]
+c  57 splitting 16 out of 101 nodes 16%
+c (57 861) 1162.0 sec, 334 MB, 117 nodes +16 -25 s0, vars[4269..4514..11874]
+c  57 searching 32 out of 117 nodes 27% limit 65938
+c  57 average actual conflicts 53638 median 65938
+c  58 simplify  32 out of 102 nodes 31%
+c  58 lookahead 16 out of 102 nodes 16% on nodes [16..31]
+c  58 splitting 16 out of 102 nodes 16%
+c (58 877) 1249.4 sec, 342 MB, 118 nodes +16 -15 s0, vars[4205..4510..11874]
+c  58 searching 32 out of 118 nodes 27% limit 59344
+c  58 average actual conflicts 50084 median 59344
+c  59 simplify  32 out of 107 nodes 30%
+c  59 lookahead 16 out of 107 nodes 15% on nodes [16..31]
+c  59 splitting 16 out of 107 nodes 15%
+c (59 893) 1401.3 sec, 352 MB, 123 nodes +16 -11 s0, vars[4157..4493..11874]
+c  59 searching 32 out of 123 nodes 26% limit 53409
+c  59 average actual conflicts 46467 median 53409
+c  60 simplify  114 out of 114 nodes 100%
+c  60 lookahead 16 out of 114 nodes 14% on nodes [16..31]
+c  60 splitting 16 out of 114 nodes 14%
+c [60 909] 1550.3 sec, 376 MB, 130 nodes +16 -9 s0, vars[4340..4482..11874]
+c  60 searching 64 out of 130 nodes 49% limit 48068
+c  60 average actual conflicts 43780 median 48068
+c  61 simplify  32 out of 113 nodes 28%
+c  61 lookahead 16 out of 113 nodes 14% on nodes [16..31]
+c  61 splitting 16 out of 113 nodes 14%
+c (61 925) 1793.1 sec, 402 MB, 129 nodes +16 -17 s0, vars[4041..4461..11874]
+c  61 searching 32 out of 129 nodes 25% limit 96136
+c  61 average actual conflicts 71652 median 96136
+c  62 simplify  32 out of 117 nodes 27%
+c  62 lookahead 16 out of 117 nodes 14% on nodes [16..31]
+c  62 splitting 16 out of 117 nodes 14%
+c (62 941) 1967.9 sec, 422 MB, 133 nodes +16 -12 s0, vars[3807..4451..11874]
+c  62 searching 32 out of 133 nodes 24% limit 86522
+c  62 average actual conflicts 68959 median 86522
+c  63 simplify  32 out of 124 nodes 26%
+c  63 lookahead 16 out of 124 nodes 13% on nodes [16..31]
+c  63 splitting 16 out of 124 nodes 13%
+c (63 957) 2208.8 sec, 445 MB, 140 nodes +16 -9 s0, vars[4060..4434..11874]
+c  63 searching 32 out of 140 nodes 23% limit 77869
+c  63 average actual conflicts 65962 median 77869
+c  64 simplify  32 out of 133 nodes 24%
+c  64 lookahead 16 out of 133 nodes 12% on nodes [16..31]
+c  64 splitting 16 out of 133 nodes 12%
+c (64 973) 2384.4 sec, 466 MB, 149 nodes +16 -7 s0, vars[3807..4305..11874]
+c  64 searching 32 out of 149 nodes 21% limit 70082
+c  64 average actual conflicts 54645 median 70082
+c  65 simplify  32 out of 139 nodes 23%
+c  65 lookahead 16 out of 139 nodes 12% on nodes [16..31]
+c  65 splitting 16 out of 139 nodes 12%
+c (65 989) 2557.5 sec, 488 MB, 155 nodes +16 -10 s0, vars[3783..4223..11874]
+c  65 searching 32 out of 155 nodes 21% limit 63073
+c  65 average actual conflicts 51778 median 63073
+c  66 simplify  32 out of 148 nodes 22%
+c  66 lookahead 16 out of 148 nodes 11% on nodes [16..31]
+c  66 splitting 16 out of 148 nodes 11%
+c (66 1005) 2736.1 sec, 518 MB, 164 nodes +16 -7 s0, vars[3755..4115..11874]
+c  66 searching 32 out of 164 nodes 20% limit 56765
+c  66 average actual conflicts 46605 median 56765
+c  67 simplify  32 out of 154 nodes 21%
+c  67 lookahead 16 out of 154 nodes 10% on nodes [16..31]
+c  67 splitting 16 out of 154 nodes 10%
+c (67 1021) 2894.8 sec, 541 MB, 170 nodes +16 -10 s0, vars[3687..4081..11874]
+c  67 searching 32 out of 170 nodes 19% limit 51088
+c  67 average actual conflicts 47056 median 51089
+c  68 simplify  32 out of 164 nodes 20%
+c  68 lookahead 16 out of 164 nodes 10% on nodes [16..31]
+c  68 splitting 16 out of 164 nodes 10%
+c (68 1037) 2971.2 sec, 568 MB, 180 nodes +16 -6 s0, vars[3589..3895..11874]
+c  68 searching 32 out of 180 nodes 18% limit 45980
+c  68 average actual conflicts 37840 median 45980
+c  69 simplify  32 out of 172 nodes 19%
+c  69 lookahead 16 out of 172 nodes 9% on nodes [16..31]
+c  69 splitting 16 out of 172 nodes 9%
+c (69 1053) 3098.5 sec, 576 MB, 187 nodes +16 -9 s0, vars[3277..3769..11874]
+c  69 searching 32 out of 187 nodes 17% limit 41382
+c  69 average actual conflicts 28322 median 41382
+c  70 simplify  128 out of 172 nodes 74%
+c  70 lookahead 16 out of 172 nodes 9% on nodes [16..31]
+c  70 splitting 16 out of 172 nodes 9%
+c [70 1069] 3204.3 sec, 596 MB, 188 nodes +16 -15 s0, vars[2756..3756..11874]
+c  70 searching 64 out of 188 nodes 34% limit 37243
+c  70 average actual conflicts 25485 median 37243
+c  71 simplify  32 out of 159 nodes 20%
+c  71 lookahead 16 out of 159 nodes 10% on nodes [16..31]
+c  71 splitting 16 out of 159 nodes 10%
+c (71 1085) 3370.4 sec, 542 MB, 175 nodes +16 -29 s0, vars[3234..3952..11874]
+c  71 searching 32 out of 175 nodes 18% limit 74486
+c  71 average actual conflicts 53693 median 74486
+c  72 simplify  32 out of 160 nodes 20%
+c  72 lookahead 16 out of 160 nodes 10% on nodes [16..31]
+c  72 splitting 16 out of 160 nodes 10%
+c (72 1101) 3521.1 sec, 562 MB, 176 nodes +16 -15 s0, vars[2688..3923..11874]
+c  72 searching 32 out of 176 nodes 18% limit 67037
+c  72 average actual conflicts 48442 median 67037
+c  73 simplify  32 out of 161 nodes 20%
+c  73 lookahead 16 out of 161 nodes 10% on nodes [16..31]
+c  73 splitting 16 out of 161 nodes 10%
+c (73 1117) 3646.9 sec, 565 MB, 176 nodes +16 -16 s0, vars[3292..3910..11874]
+c  73 searching 32 out of 176 nodes 18% limit 67037
+c  73 average actual conflicts 55816 median 67037
+c  74 simplify  32 out of 167 nodes 19%
+c  74 lookahead 16 out of 167 nodes 10% on nodes [16..31]
+c  74 splitting 16 out of 167 nodes 10%
+c (74 1133) 3836.8 sec, 585 MB, 183 nodes +16 -9 s0, vars[3142..3758..11874]
+c  74 searching 32 out of 183 nodes 17% limit 60333
+c  74 average actual conflicts 39985 median 60333
+c  75 simplify  32 out of 168 nodes 19%
+c  75 lookahead 16 out of 168 nodes 10% on nodes [16..31]
+c  75 splitting 16 out of 168 nodes 10%
+c (75 1149) 3980.2 sec, 591 MB, 184 nodes +16 -15 s0, vars[2689..3731..11874]
+c  75 searching 32 out of 184 nodes 17% limit 54299
+c  75 average actual conflicts 35434 median 54299
+c  76 simplify  32 out of 171 nodes 19%
+c  76 lookahead 16 out of 171 nodes 9% on nodes [16..31]
+c  76 splitting 16 out of 171 nodes 9%
+c (76 1165) 4091.6 sec, 603 MB, 187 nodes +16 -13 s0, vars[2809..3687..11874]
+c  76 searching 32 out of 187 nodes 17% limit 48869
+c  76 average actual conflicts 29150 median 48869
+c  77 simplify  32 out of 171 nodes 19%
+c  77 lookahead 16 out of 171 nodes 9% on nodes [16..31]
+c  77 splitting 16 out of 171 nodes 9%
+c (77 1181) 4145.6 sec, 610 MB, 187 nodes +16 -16 s0, vars[2747..3683..11874]
+c  77 searching 32 out of 187 nodes 17% limit 48869
+c  77 average actual conflicts 33626 median 48869
+c  78 simplify  32 out of 171 nodes 19%
+c  78 lookahead 16 out of 171 nodes 9% on nodes [16..31]
+c  78 splitting 16 out of 171 nodes 9%
+c (78 1197) 4267.6 sec, 608 MB, 186 nodes +16 -17 s0, vars[2021..3662..11874]
+c  78 searching 32 out of 186 nodes 17% limit 97738
+c  78 average actual conflicts 48798 median 26406
+c  79 simplify  32 out of 167 nodes 19%
+c  79 lookahead 16 out of 167 nodes 10% on nodes [16..31]
+c  79 splitting 16 out of 167 nodes 10%
+c (79 1213) 4458.8 sec, 577 MB, 180 nodes +16 -22 s0, vars[2638..3706..11874]
+c  79 searching 32 out of 180 nodes 18% limit 52812
+c  79 average actual conflicts 34742 median 52812
+c  80 simplify  128 out of 166 nodes 77%
+c  80 lookahead 16 out of 166 nodes 10% on nodes [16..31]
+c  80 splitting 16 out of 166 nodes 10%
+c [80 1229] 4596.6 sec, 597 MB, 182 nodes +16 -14 s0, vars[3236..3702..11874]
+c  80 searching 64 out of 182 nodes 35% limit 47530
+c  80 average actual conflicts 36248 median 47530
+c  81 simplify  32 out of 163 nodes 20%
+c  81 lookahead 16 out of 163 nodes 10% on nodes [16..31]
+c  81 splitting 16 out of 163 nodes 10%
+c (81 1245) 4766.9 sec, 610 MB, 179 nodes +16 -19 s0, vars[2108..3667..11874]
+c  81 searching 32 out of 179 nodes 18% limit 95060
+c  81 average actual conflicts 67945 median 95060
+c  82 simplify  32 out of 166 nodes 19%
+c  82 lookahead 16 out of 166 nodes 10% on nodes [16..31]
+c  82 splitting 16 out of 166 nodes 10%
+c (82 1261) 5035.6 sec, 610 MB, 182 nodes +16 -13 s0, vars[2567..3635..11874]
+c  82 searching 32 out of 182 nodes 18% limit 85554
+c  82 average actual conflicts 61397 median 85554
+c  83 simplify  32 out of 170 nodes 19%
+c  83 lookahead 16 out of 170 nodes 9% on nodes [16..31]
+c  83 splitting 16 out of 170 nodes 9%
+c (83 1277) 5246.5 sec, 652 MB, 186 nodes +16 -12 s0, vars[3265..3573..11874]
+c  83 searching 32 out of 186 nodes 17% limit 76998
+c  83 average actual conflicts 51768 median 76998
+c  84 simplify  32 out of 170 nodes 19%
+c  84 lookahead 16 out of 170 nodes 9% on nodes [16..31]
+c  84 splitting 16 out of 170 nodes 9%
+c (84 1293) 5400.3 sec, 649 MB, 186 nodes +16 -16 s0, vars[3074..3559..11874]
+c  84 searching 32 out of 186 nodes 17% limit 76998
+c  84 average actual conflicts 44202 median 37835
+c  85 simplify  32 out of 168 nodes 19%
+c  85 lookahead 16 out of 168 nodes 10% on nodes [16..31]
+c  85 splitting 16 out of 168 nodes 10%
+c (85 1309) 5579.8 sec, 664 MB, 184 nodes +16 -18 s0, vars[2826..3558..11874]
+c  85 searching 32 out of 184 nodes 17% limit 75670
+c  85 average actual conflicts 46692 median 75670
+c  86 simplify  32 out of 168 nodes 19%
+c  86 lookahead 16 out of 168 nodes 10% on nodes [16..31]
+c  86 splitting 16 out of 168 nodes 10%
+c (86 1325) 5766.2 sec, 635 MB, 184 nodes +16 -16 s0, vars[2188..3535..11874]
+c  86 searching 32 out of 184 nodes 17% limit 75670
+c  86 average actual conflicts 41797 median 33083
+c  87 simplify  32 out of 165 nodes 19%
+c  87 lookahead 16 out of 165 nodes 10% on nodes [16..31]
+c  87 splitting 16 out of 165 nodes 10%
+c (87 1341) 5840.4 sec, 599 MB, 181 nodes +16 -19 s0, vars[3177..3556..11874]
+c  87 searching 32 out of 181 nodes 18% limit 66166
+c  87 average actual conflicts 45926 median 66166
+c  88 simplify  32 out of 167 nodes 19%
+c  88 lookahead 16 out of 167 nodes 10% on nodes [16..31]
+c  88 splitting 16 out of 167 nodes 10%
+c (88 1357) 6023.0 sec, 613 MB, 182 nodes +16 -15 s0, vars[2689..3567..11874]
+c  88 searching 32 out of 182 nodes 18% limit 59549
+c  88 average actual conflicts 40698 median 59549
+c  89 simplify  32 out of 168 nodes 19%
+c  89 lookahead 16 out of 168 nodes 10% on nodes [16..31]
+c  89 splitting 16 out of 168 nodes 10%
+c (89 1373) 6186.0 sec, 629 MB, 183 nodes +16 -15 s0, vars[2535..3494..11874]
+c  89 searching 32 out of 183 nodes 17% limit 53594
+c  89 average actual conflicts 29359 median 26681
+c  90 simplify  128 out of 164 nodes 78%
+c  90 lookahead 16 out of 164 nodes 10% on nodes [16..31]
+c  90 splitting 16 out of 164 nodes 10%
+c [90 1389] 6303.8 sec, 611 MB, 180 nodes +16 -19 s0, vars[2926..3593..11874]
+c  90 searching 64 out of 180 nodes 36% limit 53362
+c  90 average actual conflicts 41909 median 53362
+c  91 simplify  32 out of 163 nodes 20%
+c  91 lookahead 16 out of 163 nodes 10% on nodes [16..31]
+c  91 splitting 16 out of 163 nodes 10%
+c (91 1405) 6497.7 sec, 587 MB, 178 nodes +16 -18 s0, vars[2009..3562..11874]
+c  91 searching 32 out of 178 nodes 18% limit 100000
+c  91 average actual conflicts 63556 median 81890
+c  92 simplify  32 out of 159 nodes 20%
+c  92 lookahead 16 out of 159 nodes 10% on nodes [16..31]
+c  92 splitting 16 out of 159 nodes 10%
+c (92 1421) 6727.5 sec, 588 MB, 174 nodes +16 -20 s0, vars[2378..3668..11874]
+c  92 searching 32 out of 174 nodes 18% limit 100000
+c  92 average actual conflicts 75052 median 100000
+c  93 simplify  32 out of 163 nodes 20%
+c  93 lookahead 16 out of 163 nodes 10% on nodes [16..31]
+c  93 splitting 16 out of 163 nodes 10%
+c (93 1437) 6968.9 sec, 619 MB, 179 nodes +16 -11 s0, vars[1889..3559..11874]
+c  93 searching 32 out of 179 nodes 18% limit 90000
+c  93 average actual conflicts 68484 median 90000
+c  94 simplify  32 out of 167 nodes 19%
+c  94 lookahead 16 out of 167 nodes 10% on nodes [16..31]
+c  94 splitting 16 out of 167 nodes 10%
+c (94 1453) 7168.3 sec, 620 MB, 183 nodes +16 -12 s0, vars[3128..3491..11874]
+c  94 searching 32 out of 183 nodes 17% limit 81000
+c  94 average actual conflicts 44599 median 40734
+c  95 simplify  32 out of 163 nodes 20%
+c  95 lookahead 16 out of 163 nodes 10% on nodes [16..31]
+c  95 splitting 16 out of 163 nodes 10%
+c (95 1469) 7332.1 sec, 595 MB, 179 nodes +16 -20 s0, vars[1730..3538..11874]
+c  95 searching 32 out of 179 nodes 18% limit 81468
+c  95 average actual conflicts 55168 median 81468
+c  96 simplify  32 out of 166 nodes 19%
+c  96 lookahead 16 out of 166 nodes 10% on nodes [16..31]
+c  96 splitting 16 out of 166 nodes 10%
+c (96 1485) 7530.0 sec, 622 MB, 182 nodes +16 -13 s0, vars[2437..3495..11874]
+c  96 searching 32 out of 182 nodes 18% limit 73321
+c  96 average actual conflicts 42981 median 41319
+c  97 simplify  32 out of 163 nodes 20%
+c  97 lookahead 16 out of 163 nodes 10% on nodes [16..31]
+c  97 splitting 16 out of 163 nodes 10%
+c (97 1501) 7603.8 sec, 583 MB, 177 nodes +16 -21 s0, vars[2537..3514..11874]
+c  97 searching 32 out of 177 nodes 18% limit 82638
+c  97 average actual conflicts 52213 median 79122
+c  98 simplify  32 out of 160 nodes 20%
+c  98 lookahead 16 out of 160 nodes 10% on nodes [16..31]
+c  98 splitting 16 out of 160 nodes 10%
+c (98 1517) 7807.8 sec, 599 MB, 175 nodes +16 -18 s0, vars[3101..3597..11874]
+c  98 searching 32 out of 175 nodes 18% limit 100000
+c  98 average actual conflicts 77608 median 100000
+c  99 simplify  32 out of 164 nodes 20%
+c  99 lookahead 16 out of 164 nodes 10% on nodes [16..31]
+c  99 splitting 16 out of 164 nodes 10%
+c (99 1533) 8105.8 sec, 595 MB, 180 nodes +16 -11 s0, vars[1738..3499..11874]
+c  99 searching 32 out of 180 nodes 18% limit 90000
+c  99 average actual conflicts 44549 median 51280
+c  100 simplify  128 out of 159 nodes 81%
+c  100 lookahead 16 out of 159 nodes 10% on nodes [16..31]
+c  100 splitting 16 out of 159 nodes 10%
+c [100 1549] 8201.9 sec, 588 MB, 175 nodes +16 -21 s0, vars[1924..3627..11874]
+c  100 searching 64 out of 175 nodes 37% limit 100000
+c  100 average actual conflicts 66299 median 100000
+c  101 simplify  32 out of 146 nodes 22%
+c  101 lookahead 16 out of 146 nodes 11% on nodes [16..31]
+c  101 splitting 16 out of 146 nodes 11%
+c (101 1565) 8666.6 sec, 565 MB, 162 nodes +16 -29 s0, vars[3039..3725..11874]
+c  101 searching 32 out of 162 nodes 20% limit 100000
+c  101 average actual conflicts 83636 median 100000
+c  102 simplify  32 out of 154 nodes 21%
+c  102 lookahead 16 out of 154 nodes 10% on nodes [16..31]
+c  102 splitting 16 out of 154 nodes 10%
+c (102 1581) 8886.7 sec, 597 MB, 170 nodes +16 -8 s0, vars[3040..3607..11874]
+c  102 searching 32 out of 170 nodes 19% limit 90000
+c  102 average actual conflicts 68416 median 90000
+c  103 simplify  32 out of 160 nodes 20%
+c  103 lookahead 16 out of 160 nodes 10% on nodes [16..31]
+c  103 splitting 16 out of 160 nodes 10%
+c (103 1597) 9140.2 sec, 600 MB, 176 nodes +16 -10 s0, vars[3107..3469..11874]
+c  103 searching 32 out of 176 nodes 18% limit 81000
+c  103 average actual conflicts 51534 median 81000
+c  104 simplify  32 out of 161 nodes 20%
+c  104 lookahead 16 out of 161 nodes 10% on nodes [16..31]
+c  104 splitting 16 out of 161 nodes 10%
+c (104 1613) 9274.4 sec, 615 MB, 177 nodes +16 -15 s0, vars[2868..3428..11874]
+c  104 searching 32 out of 177 nodes 18% limit 72900
+c  104 average actual conflicts 46913 median 72900
+c  105 simplify  32 out of 161 nodes 20%
+c  105 lookahead 16 out of 161 nodes 10% on nodes [16..31]
+c  105 splitting 16 out of 161 nodes 10%
+c (105 1629) 9434.6 sec, 596 MB, 176 nodes +16 -17 s0, vars[2346..3420..11874]
+c  105 searching 32 out of 176 nodes 18% limit 100000
+c  105 average actual conflicts 48284 median 32998
+c  106 simplify  32 out of 154 nodes 21%
+c  106 lookahead 16 out of 154 nodes 10% on nodes [16..31]
+c  106 splitting 16 out of 154 nodes 10%
+c (106 1645) 9630.6 sec, 587 MB, 168 nodes +16 -24 s0, vars[2095..3544..11874]
+c  106 searching 32 out of 168 nodes 19% limit 65996
+c  106 average actual conflicts 36475 median 36228
+c  107 simplify  32 out of 151 nodes 21%

@@ -1,0 +1,29 @@
+Practical Twinkle Forgery Attack
+result_log: forgery_attack/result/forgery_attack_single_ivstart9/result_pa_forgery_attack_twinkle1280_1r_ivstart9_sat5_task3_review_20260430_010333_no1.log
+rounds: 3
+tag_length: 10
+pointer_length: 128
+cube_variables: ['v2', 'v18', 'v34', 'v50', 'v66', 'v82', 'v86', 'v98', 'v114']
+fixed_count: 119
+cube_count: 9
+target_assignment: 0
+forged_pointer_bits: 11000000000100000100000001010001000010000001000100010000000100010000000011000001110011000001000100000000100100010000000000000001
+forged_pointer:
+Slices 0-7:
+z = 0        z = 1        z = 2        z = 3        z = 4        z = 5        z = 6        z = 7
+1 1 0 0      0 1 0 0      0 0 0 0      0 0 0 1      0 0 0 0      1 1 0 0      0 0 0 0      0 0 0 0
+0 0 0 0      0 0 0 0      1 0 0 0      0 0 0 0      0 0 0 0      1 1 0 0      0 0 0 0      0 0 0 0
+0 0 0 1      0 1 0 1      0 0 0 1      0 0 0 1      1 1 0 0      0 0 0 1      1 0 0 1      0 0 0 0
+0 0 0 0      0 0 0 1      0 0 0 1      0 0 0 1      0 0 0 1      0 0 0 1      0 0 0 1      0 0 0 1
+expected_full_query_count: 511
+target_tag: 0011001010
+mode: execute
+backend: c
+processed_queries: 511
+skipped_target_queries: 1
+partial: false
+forged_tag: 0011001010
+verification_xor: 0000000000
+verification: OK
+Forgery attack succeeded.
+forged_pair: (11000000000100000100000001010001000010000001000100010000000100010000000011000001110011000001000100000000100100010000000000000001, 0011001010)

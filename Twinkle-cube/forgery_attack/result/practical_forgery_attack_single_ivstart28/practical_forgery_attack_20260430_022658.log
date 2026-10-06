@@ -1,0 +1,1821 @@
+Practical Twinkle Forgery Attack
+result_log: forgery_attack/result/forgery_attack_single_ivstart28/result_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903_no1.log
+rounds: 4
+tag_length: 29
+pointer_length: 128
+cube_variables: ['v2', 'v6', 'v10', 'v14', 'v18', 'v22', 'v26', 'v34', 'v38', 'v42', 'v50', 'v54', 'v58', 'v62', 'v66', 'v70', 'v74', 'v82', 'v86', 'v90', 'v94', 'v98', 'v102', 'v106', 'v110', 'v114', 'v118', 'v122']
+fixed_count: 100
+cube_count: 28
+target_assignment: 0
+forged_pointer_bits: 11000101000100001101000100010000000001010000100111000101000000001000000100000000110100010001000000000001000000001101000100001000
+forged_pointer:
+Slices 0-7:
+z = 0        z = 1        z = 2        z = 3        z = 4        z = 5        z = 6        z = 7
+1 1 0 0      1 1 0 1      0 0 0 0      1 1 0 0      1 0 0 0      1 1 0 1      0 0 0 0      1 1 0 1
+0 1 0 1      0 0 0 1      0 1 0 1      0 1 0 1      0 0 0 1      0 0 0 1      0 0 0 1      0 0 0 1
+0 0 0 1      0 0 0 1      0 0 0 0      0 0 0 0      0 0 0 0      0 0 0 1      0 0 0 0      0 0 0 0
+0 0 0 0      0 0 0 0      1 0 0 1      0 0 0 0      0 0 0 0      0 0 0 0      0 0 0 0      1 0 0 0
+expected_full_query_count: 268435455
+target_tag: 01110101001100001110111101110
+mode: execute
+backend: c
+progress:
+  next_assignment: 1048576
+  processed_queries: 1048575
+  skipped_target_queries: 1
+  xor_accumulator: 10001100100000111110110110101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 2097152
+  processed_queries: 2097151
+  skipped_target_queries: 1
+  xor_accumulator: 10110110100101101110110100110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 3145728
+  processed_queries: 3145727
+  skipped_target_queries: 1
+  xor_accumulator: 01110011110111000110000101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 4194304
+  processed_queries: 4194303
+  skipped_target_queries: 1
+  xor_accumulator: 11110111110000000110100100111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 5242880
+  processed_queries: 5242879
+  skipped_target_queries: 1
+  xor_accumulator: 10110110111010001111110100101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 6291456
+  processed_queries: 6291455
+  skipped_target_queries: 1
+  xor_accumulator: 11111100011111001110011100111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 7340032
+  processed_queries: 7340031
+  skipped_target_queries: 1
+  xor_accumulator: 01111000101000110111101110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 8388608
+  processed_queries: 8388607
+  skipped_target_queries: 1
+  xor_accumulator: 01110111111000001110011111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 9437184
+  processed_queries: 9437183
+  skipped_target_queries: 1
+  xor_accumulator: 01010110011000111001101100111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 10485760
+  processed_queries: 10485759
+  skipped_target_queries: 1
+  xor_accumulator: 11010110010110101100100101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 11534336
+  processed_queries: 11534335
+  skipped_target_queries: 1
+  xor_accumulator: 01000001101110101001111101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 12582912
+  processed_queries: 12582911
+  skipped_target_queries: 1
+  xor_accumulator: 01110111100111001110001100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 13631488
+  processed_queries: 13631487
+  skipped_target_queries: 1
+  xor_accumulator: 01111100000000001000010100001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 14680064
+  processed_queries: 14680063
+  skipped_target_queries: 1
+  xor_accumulator: 00010100110100000100100101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 15728640
+  processed_queries: 15728639
+  skipped_target_queries: 1
+  xor_accumulator: 01010000001111011000111100101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 16777216
+  processed_queries: 16777215
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001111101110011101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 17825792
+  processed_queries: 17825791
+  skipped_target_queries: 1
+  xor_accumulator: 00010001011011011100011111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 18874368
+  processed_queries: 18874367
+  skipped_target_queries: 1
+  xor_accumulator: 00111111101001000110001111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 19922944
+  processed_queries: 19922943
+  skipped_target_queries: 1
+  xor_accumulator: 10000110101101000100011110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 20971520
+  processed_queries: 20971519
+  skipped_target_queries: 1
+  xor_accumulator: 01111110111111101100000100001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 22020096
+  processed_queries: 22020095
+  skipped_target_queries: 1
+  xor_accumulator: 01101001011001101101111111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 23068672
+  processed_queries: 23068671
+  skipped_target_queries: 1
+  xor_accumulator: 10111110101010111100000111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 24117248
+  processed_queries: 24117247
+  skipped_target_queries: 1
+  xor_accumulator: 00001110001011001101100101000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 25165824
+  processed_queries: 25165823
+  skipped_target_queries: 1
+  xor_accumulator: 01110101111011100110111111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 26214400
+  processed_queries: 26214399
+  skipped_target_queries: 1
+  xor_accumulator: 11101001000000000001001111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 27262976
+  processed_queries: 27262975
+  skipped_target_queries: 1
+  xor_accumulator: 00010101010101101100000110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 28311552
+  processed_queries: 28311551
+  skipped_target_queries: 1
+  xor_accumulator: 01010100011110010001000110100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 29360128
+  processed_queries: 29360127
+  skipped_target_queries: 1
+  xor_accumulator: 01111110101000001100101100001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 30408704
+  processed_queries: 30408703
+  skipped_target_queries: 1
+  xor_accumulator: 10100011110111011010100101000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 31457280
+  processed_queries: 31457279
+  skipped_target_queries: 1
+  xor_accumulator: 10011110001111101110110110011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 32505856
+  processed_queries: 32505855
+  skipped_target_queries: 1
+  xor_accumulator: 01000100110100101010100111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 33554432
+  processed_queries: 33554431
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001100001110111101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 34603008
+  processed_queries: 34603007
+  skipped_target_queries: 1
+  xor_accumulator: 01111000110000101110001101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 35651584
+  processed_queries: 35651583
+  skipped_target_queries: 1
+  xor_accumulator: 10111110000000001100110101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 36700160
+  processed_queries: 36700159
+  skipped_target_queries: 1
+  xor_accumulator: 00001101011101110110101101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 37748736
+  processed_queries: 37748735
+  skipped_target_queries: 1
+  xor_accumulator: 01010101010111100110100101001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 38797312
+  processed_queries: 38797311
+  skipped_target_queries: 1
+  xor_accumulator: 01100010011010110101101101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 39845888
+  processed_queries: 39845887
+  skipped_target_queries: 1
+  xor_accumulator: 11010100011011001100111100100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 40894464
+  processed_queries: 40894463
+  skipped_target_queries: 1
+  xor_accumulator: 10000100010000000101110110011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 41943040
+  processed_queries: 41943039
+  skipped_target_queries: 1
+  xor_accumulator: 11110101111000101110011111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 42991616
+  processed_queries: 42991615
+  skipped_target_queries: 1
+  xor_accumulator: 10001000001111111001010101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 44040192
+  processed_queries: 44040191
+  skipped_target_queries: 1
+  xor_accumulator: 01111100010000011110110100101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 45088768
+  processed_queries: 45088767
+  skipped_target_queries: 1
+  xor_accumulator: 00010101100101011001111100100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 46137344
+  processed_queries: 46137343
+  skipped_target_queries: 1
+  xor_accumulator: 11010101000001101110001101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 47185920
+  processed_queries: 47185919
+  skipped_target_queries: 1
+  xor_accumulator: 00000010010101100010011101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 48234496
+  processed_queries: 48234495
+  skipped_target_queries: 1
+  xor_accumulator: 10011100010010010110010101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 49283072
+  processed_queries: 49283071
+  skipped_target_queries: 1
+  xor_accumulator: 00100100000101001010001101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 50331648
+  processed_queries: 50331647
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001111101110011101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 51380224
+  processed_queries: 51380223
+  skipped_target_queries: 1
+  xor_accumulator: 11000100010011011110110100110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 52428800
+  processed_queries: 52428799
+  skipped_target_queries: 1
+  xor_accumulator: 00110101101110011100001111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 53477376
+  processed_queries: 53477375
+  skipped_target_queries: 1
+  xor_accumulator: 01111001110101110110011111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 54525952
+  processed_queries: 54525951
+  skipped_target_queries: 1
+  xor_accumulator: 01011100011000001100000101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 55574528
+  processed_queries: 55574527
+  skipped_target_queries: 1
+  xor_accumulator: 10111110110110100101110110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 56623104
+  processed_queries: 56623103
+  skipped_target_queries: 1
+  xor_accumulator: 10010110001000100110000110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 57671680
+  processed_queries: 57671679
+  skipped_target_queries: 1
+  xor_accumulator: 01110001010010011101100100111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 58720256
+  processed_queries: 58720255
+  skipped_target_queries: 1
+  xor_accumulator: 11110111111011100110111111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 59768832
+  processed_queries: 59768831
+  skipped_target_queries: 1
+  xor_accumulator: 00110100001100010011011111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 60817408
+  processed_queries: 60817407
+  skipped_target_queries: 1
+  xor_accumulator: 10111101110001110110010110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 61865984
+  processed_queries: 61865983
+  skipped_target_queries: 1
+  xor_accumulator: 10000011100100010011010111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 62914560
+  processed_queries: 62914559
+  skipped_target_queries: 1
+  xor_accumulator: 01011100001110001100101101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 63963136
+  processed_queries: 63963135
+  skipped_target_queries: 1
+  xor_accumulator: 11111110001111100010010101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 65011712
+  processed_queries: 65011711
+  skipped_target_queries: 1
+  xor_accumulator: 00010110001111110100100111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 66060288
+  processed_queries: 66060287
+  skipped_target_queries: 1
+  xor_accumulator: 10110011111101101010110110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 67108864
+  processed_queries: 67108863
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001100001110111101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 68157440
+  processed_queries: 68157439
+  skipped_target_queries: 1
+  xor_accumulator: 10011110011010011111010101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 69206016
+  processed_queries: 69206015
+  skipped_target_queries: 1
+  xor_accumulator: 10010100000111001100010101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 70254592
+  processed_queries: 70254591
+  skipped_target_queries: 1
+  xor_accumulator: 00100001100010100101100111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 71303168
+  processed_queries: 71303167
+  skipped_target_queries: 1
+  xor_accumulator: 11110100100110001100100100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 72351744
+  processed_queries: 72351743
+  skipped_target_queries: 1
+  xor_accumulator: 00001101100000101100100101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 73400320
+  processed_queries: 73400319
+  skipped_target_queries: 1
+  xor_accumulator: 01010111001101001110001111101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 74448896
+  processed_queries: 74448895
+  skipped_target_queries: 1
+  xor_accumulator: 00011011111101110110100100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 75497472
+  processed_queries: 75497471
+  skipped_target_queries: 1
+  xor_accumulator: 01110111111000000110011101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 76546048
+  processed_queries: 76546047
+  skipped_target_queries: 1
+  xor_accumulator: 10110110100011100000000100001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 77594624
+  processed_queries: 77594623
+  skipped_target_queries: 1
+  xor_accumulator: 11111110101111100100101111111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 78643200
+  processed_queries: 78643199
+  skipped_target_queries: 1
+  xor_accumulator: 01101011100100111010101111000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 79691776
+  processed_queries: 79691775
+  skipped_target_queries: 1
+  xor_accumulator: 01110100010010100100001110110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 80740352
+  processed_queries: 80740351
+  skipped_target_queries: 1
+  xor_accumulator: 10110111010000111011111101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 81788928
+  processed_queries: 81788927
+  skipped_target_queries: 1
+  xor_accumulator: 00110111010100101110001101000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 82837504
+  processed_queries: 82837503
+  skipped_target_queries: 1
+  xor_accumulator: 01001011100001101001101111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 83886080
+  processed_queries: 83886079
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001111101110011101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 84934656
+  processed_queries: 84934655
+  skipped_target_queries: 1
+  xor_accumulator: 01010010010001110101001101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 85983232
+  processed_queries: 85983231
+  skipped_target_queries: 1
+  xor_accumulator: 00011111011111010100110110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 87031808
+  processed_queries: 87031807
+  skipped_target_queries: 1
+  xor_accumulator: 10001110001000010101000111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 88080384
+  processed_queries: 88080383
+  skipped_target_queries: 1
+  xor_accumulator: 11111111101001001110000100101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 89128960
+  processed_queries: 89128959
+  skipped_target_queries: 1
+  xor_accumulator: 10000011110101000100000111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 90177536
+  processed_queries: 90177535
+  skipped_target_queries: 1
+  xor_accumulator: 00010111101100110100011100110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 91226112
+  processed_queries: 91226111
+  skipped_target_queries: 1
+  xor_accumulator: 10110101101000000100111100001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 92274688
+  processed_queries: 92274687
+  skipped_target_queries: 1
+  xor_accumulator: 01110111111011000110111101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 93323264
+  processed_queries: 93323263
+  skipped_target_queries: 1
+  xor_accumulator: 01010010111000100000001101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 94371840
+  processed_queries: 94371839
+  skipped_target_queries: 1
+  xor_accumulator: 10111111111010001100000100010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 95420416
+  processed_queries: 95420415
+  skipped_target_queries: 1
+  xor_accumulator: 00101100110101110000110110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 96468992
+  processed_queries: 96468991
+  skipped_target_queries: 1
+  xor_accumulator: 11111111011101100110111110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 97517568
+  processed_queries: 97517567
+  skipped_target_queries: 1
+  xor_accumulator: 10110001100010011011010110100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 98566144
+  processed_queries: 98566143
+  skipped_target_queries: 1
+  xor_accumulator: 00111101111001110100110110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 99614720
+  processed_queries: 99614719
+  skipped_target_queries: 1
+  xor_accumulator: 00001101111101010011110110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 100663296
+  processed_queries: 100663295
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001100001110111101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 101711872
+  processed_queries: 101711871
+  skipped_target_queries: 1
+  xor_accumulator: 11111000111001110101010110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 102760448
+  processed_queries: 102760447
+  skipped_target_queries: 1
+  xor_accumulator: 00010110000010110110001100001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 103809024
+  processed_queries: 103809023
+  skipped_target_queries: 1
+  xor_accumulator: 01000101010100111101011101100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 104857600
+  processed_queries: 104857599
+  skipped_target_queries: 1
+  xor_accumulator: 11011110000001000100100101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 105906176
+  processed_queries: 105906175
+  skipped_target_queries: 1
+  xor_accumulator: 11100011110101000100100100111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 106954752
+  processed_queries: 106954751
+  skipped_target_queries: 1
+  xor_accumulator: 11011111001001011100010101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 108003328
+  processed_queries: 108003327
+  skipped_target_queries: 1
+  xor_accumulator: 11110101111011100100111110100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 109051904
+  processed_queries: 109051903
+  skipped_target_queries: 1
+  xor_accumulator: 11110101111000000110011101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 110100480
+  processed_queries: 110100479
+  skipped_target_queries: 1
+  xor_accumulator: 01111000010001110000000100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 111149056
+  processed_queries: 111149055
+  skipped_target_queries: 1
+  xor_accumulator: 11110110101010101110100110001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 112197632
+  processed_queries: 112197631
+  skipped_target_queries: 1
+  xor_accumulator: 10000111100000001000101111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 113246208
+  processed_queries: 113246207
+  skipped_target_queries: 1
+  xor_accumulator: 01011100110100001100001111000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 114294784
+  processed_queries: 114294783
+  skipped_target_queries: 1
+  xor_accumulator: 11010011000100001001011100101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 115343360
+  processed_queries: 115343359
+  skipped_target_queries: 1
+  xor_accumulator: 00110101010001101100000111101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 116391936
+  processed_queries: 116391935
+  skipped_target_queries: 1
+  xor_accumulator: 00101101100100110001101110001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 117440512
+  processed_queries: 117440511
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001111101110011101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 118489088
+  processed_queries: 118489087
+  skipped_target_queries: 1
+  xor_accumulator: 10010101111000001101100110110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 119537664
+  processed_queries: 119537663
+  skipped_target_queries: 1
+  xor_accumulator: 10011111111000000110101110011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 120586240
+  processed_queries: 120586239
+  skipped_target_queries: 1
+  xor_accumulator: 11101011011110011111111100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 121634816
+  processed_queries: 121634815
+  skipped_target_queries: 1
+  xor_accumulator: 01010101001110100110000101001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 122683392
+  processed_queries: 122683391
+  skipped_target_queries: 1
+  xor_accumulator: 01101100111001111110111110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 123731968
+  processed_queries: 123731967
+  skipped_target_queries: 1
+  xor_accumulator: 10011101001110001110100111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 124780544
+  processed_queries: 124780543
+  skipped_target_queries: 1
+  xor_accumulator: 11011000011001000100010111000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 125829120
+  processed_queries: 125829119
+  skipped_target_queries: 1
+  xor_accumulator: 11110101111011100110111101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 126877696
+  processed_queries: 126877695
+  skipped_target_queries: 1
+  xor_accumulator: 00011101100101100010001100010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 127926272
+  processed_queries: 127926271
+  skipped_target_queries: 1
+  xor_accumulator: 10110111011100011110001100111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 128974848
+  processed_queries: 128974847
+  skipped_target_queries: 1
+  xor_accumulator: 11000011110101100000001110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 130023424
+  processed_queries: 130023423
+  skipped_target_queries: 1
+  xor_accumulator: 01010111111011001110111111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 131072000
+  processed_queries: 131071999
+  skipped_target_queries: 1
+  xor_accumulator: 11110110101010011011110110011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 132120576
+  processed_queries: 132120575
+  skipped_target_queries: 1
+  xor_accumulator: 00111111011010101110011101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 133169152
+  processed_queries: 133169151
+  skipped_target_queries: 1
+  xor_accumulator: 11101000001010101001111111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 134217728
+  processed_queries: 134217727
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001100001110111101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 135266304
+  processed_queries: 135266303
+  skipped_target_queries: 1
+  xor_accumulator: 01011001001001001011010100100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 136314880
+  processed_queries: 136314879
+  skipped_target_queries: 1
+  xor_accumulator: 01010100011101001100110110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 137363456
+  processed_queries: 137363455
+  skipped_target_queries: 1
+  xor_accumulator: 11011111010111011001110100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 138412032
+  processed_queries: 138412031
+  skipped_target_queries: 1
+  xor_accumulator: 11110111110110001110000100110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 139460608
+  processed_queries: 139460607
+  skipped_target_queries: 1
+  xor_accumulator: 11011011000001110000001101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 140509184
+  processed_queries: 140509183
+  skipped_target_queries: 1
+  xor_accumulator: 00110110100000100100011100010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 141557760
+  processed_queries: 141557759
+  skipped_target_queries: 1
+  xor_accumulator: 01010110011101001010000110100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 142606336
+  processed_queries: 142606335
+  skipped_target_queries: 1
+  xor_accumulator: 11110111111100000110111111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 143654912
+  processed_queries: 143654911
+  skipped_target_queries: 1
+  xor_accumulator: 00100011110111011110101111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 144703488
+  processed_queries: 144703487
+  skipped_target_queries: 1
+  xor_accumulator: 10010100001010110100100101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 145752064
+  processed_queries: 145752063
+  skipped_target_queries: 1
+  xor_accumulator: 01101111101100111110101111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 146800640
+  processed_queries: 146800639
+  skipped_target_queries: 1
+  xor_accumulator: 11110111100001101110001100100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 147849216
+  processed_queries: 147849215
+  skipped_target_queries: 1
+  xor_accumulator: 10111001111101001101001110001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 148897792
+  processed_queries: 148897791
+  skipped_target_queries: 1
+  xor_accumulator: 11111100101011010100000111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 149946368
+  processed_queries: 149946367
+  skipped_target_queries: 1
+  xor_accumulator: 11110100111100101101010101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 150994944
+  processed_queries: 150994943
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001111101110011101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 152043520
+  processed_queries: 152043519
+  skipped_target_queries: 1
+  xor_accumulator: 11000111010100011001101110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 153092096
+  processed_queries: 153092095
+  skipped_target_queries: 1
+  xor_accumulator: 11010111110111000110001101100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 154140672
+  processed_queries: 154140671
+  skipped_target_queries: 1
+  xor_accumulator: 10100010101011101011101100101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 155189248
+  processed_queries: 155189247
+  skipped_target_queries: 1
+  xor_accumulator: 01111110111001100100100100000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 156237824
+  processed_queries: 156237823
+  skipped_target_queries: 1
+  xor_accumulator: 10000100010101000000110101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 157286400
+  processed_queries: 157286399
+  skipped_target_queries: 1
+  xor_accumulator: 01111110110111110100000111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 158334976
+  processed_queries: 158334975
+  skipped_target_queries: 1
+  xor_accumulator: 00101011001001000010101100100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 159383552
+  processed_queries: 159383551
+  skipped_target_queries: 1
+  xor_accumulator: 11110111111011101110011111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 160432128
+  processed_queries: 160432127
+  skipped_target_queries: 1
+  xor_accumulator: 10010101001000010100011111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 161480704
+  processed_queries: 161480703
+  skipped_target_queries: 1
+  xor_accumulator: 01011111001110100110100110001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 162529280
+  processed_queries: 162529279
+  skipped_target_queries: 1
+  xor_accumulator: 01111000011010000100110111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 163577856
+  processed_queries: 163577855
+  skipped_target_queries: 1
+  xor_accumulator: 01111110101110101100101100010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 164626432
+  processed_queries: 164626431
+  skipped_target_queries: 1
+  xor_accumulator: 01101100111000001111101100101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 165675008
+  processed_queries: 165675007
+  skipped_target_queries: 1
+  xor_accumulator: 11111110010010101100010100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 166723584
+  processed_queries: 166723583
+  skipped_target_queries: 1
+  xor_accumulator: 11100001010101111111001111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 167772160
+  processed_queries: 167772159
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001100001110111101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 168820736
+  processed_queries: 168820735
+  skipped_target_queries: 1
+  xor_accumulator: 01110000100101101001001100110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 169869312
+  processed_queries: 169869311
+  skipped_target_queries: 1
+  xor_accumulator: 11111000101111011110111111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 170917888
+  processed_queries: 170917887
+  skipped_target_queries: 1
+  xor_accumulator: 01011010110100101011010111000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 171966464
+  processed_queries: 171966463
+  skipped_target_queries: 1
+  xor_accumulator: 11010111110001001110000111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 173015040
+  processed_queries: 173015039
+  skipped_target_queries: 1
+  xor_accumulator: 01010101101010111000111101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 174063616
+  processed_queries: 174063615
+  skipped_target_queries: 1
+  xor_accumulator: 00011000010011110110110110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 175112192
+  processed_queries: 175112191
+  skipped_target_queries: 1
+  xor_accumulator: 11110100111011011010111111101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 176160768
+  processed_queries: 176160767
+  skipped_target_queries: 1
+  xor_accumulator: 01110101111100100110111111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 177209344
+  processed_queries: 177209343
+  skipped_target_queries: 1
+  xor_accumulator: 10000000011101101100110101001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 178257920
+  processed_queries: 178257919
+  skipped_target_queries: 1
+  xor_accumulator: 10111000011010110110111100001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 179306496
+  processed_queries: 179306495
+  skipped_target_queries: 1
+  xor_accumulator: 01000000101110101100100111101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 180355072
+  processed_queries: 180355071
+  skipped_target_queries: 1
+  xor_accumulator: 11010101100111101110001111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 181403648
+  processed_queries: 181403647
+  skipped_target_queries: 1
+  xor_accumulator: 10011101110010110101101110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 182452224
+  processed_queries: 182452223
+  skipped_target_queries: 1
+  xor_accumulator: 01010000111010110110011101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 183500800
+  processed_queries: 183500799
+  skipped_target_queries: 1
+  xor_accumulator: 11111100111001111101100111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 184549376
+  processed_queries: 184549375
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001111101110011101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 185597952
+  processed_queries: 185597951
+  skipped_target_queries: 1
+  xor_accumulator: 01001111100100101001110110110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 186646528
+  processed_queries: 186646527
+  skipped_target_queries: 1
+  xor_accumulator: 11111011100111101100100101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 187695104
+  processed_queries: 187695103
+  skipped_target_queries: 1
+  xor_accumulator: 10100110111110111011010110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 188743680
+  processed_queries: 188743679
+  skipped_target_queries: 1
+  xor_accumulator: 01011100111010100100100111101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 189792256
+  processed_queries: 189792255
+  skipped_target_queries: 1
+  xor_accumulator: 00001001100001011010000101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 190840832
+  processed_queries: 190840831
+  skipped_target_queries: 1
+  xor_accumulator: 01010000100010111110101100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 191889408
+  processed_queries: 191889407
+  skipped_target_queries: 1
+  xor_accumulator: 10001010011010010000111100011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 192937984
+  processed_queries: 192937983
+  skipped_target_queries: 1
+  xor_accumulator: 01110111111011101110011111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 193986560
+  processed_queries: 193986559
+  skipped_target_queries: 1
+  xor_accumulator: 10110111111100010100111100100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 195035136
+  processed_queries: 195035135
+  skipped_target_queries: 1
+  xor_accumulator: 01110001111100101100011110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 196083712
+  processed_queries: 196083711
+  skipped_target_queries: 1
+  xor_accumulator: 11010110101100100100011111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 197132288
+  processed_queries: 197132287
+  skipped_target_queries: 1
+  xor_accumulator: 01011100101100001100101111111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 198180864
+  processed_queries: 198180863
+  skipped_target_queries: 1
+  xor_accumulator: 01101001001010100101100101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 199229440
+  processed_queries: 199229439
+  skipped_target_queries: 1
+  xor_accumulator: 11010000100101100110001111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 200278016
+  processed_queries: 200278015
+  skipped_target_queries: 1
+  xor_accumulator: 11101000000111111101101101100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 201326592
+  processed_queries: 201326591
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001100001110111101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 202375168
+  processed_queries: 202375167
+  skipped_target_queries: 1
+  xor_accumulator: 01101001111001101000000111111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 203423744
+  processed_queries: 203423743
+  skipped_target_queries: 1
+  xor_accumulator: 01011100110011101110010101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 204472320
+  processed_queries: 204472319
+  skipped_target_queries: 1
+  xor_accumulator: 10000100000000011000111100010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 205520896
+  processed_queries: 205520895
+  skipped_target_queries: 1
+  xor_accumulator: 11110100100000101110000100110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 206569472
+  processed_queries: 206569471
+  skipped_target_queries: 1
+  xor_accumulator: 01001000000101010011101111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 207618048
+  processed_queries: 207618047
+  skipped_target_queries: 1
+  xor_accumulator: 10010111111110101110101101101
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 208666624
+  processed_queries: 208666623
+  skipped_target_queries: 1
+  xor_accumulator: 00010110111110100011100101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 209715200
+  processed_queries: 209715199
+  skipped_target_queries: 1
+  xor_accumulator: 11110111111100000110111101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 210763776
+  processed_queries: 210763775
+  skipped_target_queries: 1
+  xor_accumulator: 11111001000110101101011101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 211812352
+  processed_queries: 211812351
+  skipped_target_queries: 1
+  xor_accumulator: 00110110011110110100101101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 212860928
+  processed_queries: 212860927
+  skipped_target_queries: 1
+  xor_accumulator: 11110100100001100111111101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 213909504
+  processed_queries: 213909503
+  skipped_target_queries: 1
+  xor_accumulator: 11110100010100100110001110001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 214958080
+  processed_queries: 214958079
+  skipped_target_queries: 1
+  xor_accumulator: 01100000110010011110011110011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 216006656
+  processed_queries: 216006655
+  skipped_target_queries: 1
+  xor_accumulator: 01110101100111111100101101100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 217055232
+  processed_queries: 217055231
+  skipped_target_queries: 1
+  xor_accumulator: 01010110100001110100000101011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 218103808
+  processed_queries: 218103807
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001111101110011101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 219152384
+  processed_queries: 219152383
+  skipped_target_queries: 1
+  xor_accumulator: 00101100000010011010001100010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 220200960
+  processed_queries: 220200959
+  skipped_target_queries: 1
+  xor_accumulator: 01011101001101100100110110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 221249536
+  processed_queries: 221249535
+  skipped_target_queries: 1
+  xor_accumulator: 10101000011010001000011101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 222298112
+  processed_queries: 222298111
+  skipped_target_queries: 1
+  xor_accumulator: 11111111101011101100100100100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 223346688
+  processed_queries: 223346687
+  skipped_target_queries: 1
+  xor_accumulator: 11001110110101001001011110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 224395264
+  processed_queries: 224395263
+  skipped_target_queries: 1
+  xor_accumulator: 01011111111101000110111110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 225443840
+  processed_queries: 225443839
+  skipped_target_queries: 1
+  xor_accumulator: 10111000001110110011111110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 226492416
+  processed_queries: 226492415
+  skipped_target_queries: 1
+  xor_accumulator: 11110101111011000110011101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 227540992
+  processed_queries: 227540991
+  skipped_target_queries: 1
+  xor_accumulator: 00011100101001010111000111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 228589568
+  processed_queries: 228589567
+  skipped_target_queries: 1
+  xor_accumulator: 11111111001100111110100110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 229638144
+  processed_queries: 229638143
+  skipped_target_queries: 1
+  xor_accumulator: 00111010100101111111000101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 230686720
+  processed_queries: 230686719
+  skipped_target_queries: 1
+  xor_accumulator: 11111111011111100100111110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 231735296
+  processed_queries: 231735295
+  skipped_target_queries: 1
+  xor_accumulator: 01100110100101101110000110011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 232783872
+  processed_queries: 232783871
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001000000100010110111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 233832448
+  processed_queries: 233832447
+  skipped_target_queries: 1
+  xor_accumulator: 10011010111000111110111111011
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 234881024
+  processed_queries: 234881023
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001100001110111101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 235929600
+  processed_queries: 235929599
+  skipped_target_queries: 1
+  xor_accumulator: 01100110010001010000010110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 236978176
+  processed_queries: 236978175
+  skipped_target_queries: 1
+  xor_accumulator: 01011000000001100100000100000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 238026752
+  processed_queries: 238026751
+  skipped_target_queries: 1
+  xor_accumulator: 10001101001010100010111110100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 239075328
+  processed_queries: 239075327
+  skipped_target_queries: 1
+  xor_accumulator: 01011110100111000110000111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 240123904
+  processed_queries: 240123903
+  skipped_target_queries: 1
+  xor_accumulator: 01101010101100101001010111010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 241172480
+  processed_queries: 241172479
+  skipped_target_queries: 1
+  xor_accumulator: 00111001101101001100111101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 242221056
+  processed_queries: 242221055
+  skipped_target_queries: 1
+  xor_accumulator: 00010010010011110011001100010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 243269632
+  processed_queries: 243269631
+  skipped_target_queries: 1
+  xor_accumulator: 01110101111100000110111101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 244318208
+  processed_queries: 244318207
+  skipped_target_queries: 1
+  xor_accumulator: 11111110101111101111001101001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 245366784
+  processed_queries: 245366783
+  skipped_target_queries: 1
+  xor_accumulator: 10011000101101001110101100000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 246415360
+  processed_queries: 246415359
+  skipped_target_queries: 1
+  xor_accumulator: 11110101001000110111000111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 247463936
+  processed_queries: 247463935
+  skipped_target_queries: 1
+  xor_accumulator: 01011110010010101110001101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 248512512
+  processed_queries: 248512511
+  skipped_target_queries: 1
+  xor_accumulator: 11001010011011111110000100111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 249561088
+  processed_queries: 249561087
+  skipped_target_queries: 1
+  xor_accumulator: 01110001110101101110001101001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 250609664
+  processed_queries: 250609663
+  skipped_target_queries: 1
+  xor_accumulator: 11111010001110001110010101111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 251658240
+  processed_queries: 251658239
+  skipped_target_queries: 1
+  xor_accumulator: 01110111001111101110011101110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 252706816
+  processed_queries: 252706815
+  skipped_target_queries: 1
+  xor_accumulator: 10000000110000010000100101100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 253755392
+  processed_queries: 253755391
+  skipped_target_queries: 1
+  xor_accumulator: 11011011011101100110000110110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 254803968
+  processed_queries: 254803967
+  skipped_target_queries: 1
+  xor_accumulator: 00100010100000100000101110000
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 255852544
+  processed_queries: 255852543
+  skipped_target_queries: 1
+  xor_accumulator: 01010111101000100100100111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 256901120
+  processed_queries: 256901119
+  skipped_target_queries: 1
+  xor_accumulator: 01101111000001000001001110100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 257949696
+  processed_queries: 257949695
+  skipped_target_queries: 1
+  xor_accumulator: 11110001001000101100101111100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 258998272
+  processed_queries: 258998271
+  skipped_target_queries: 1
+  xor_accumulator: 00111101010100010001010110001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 260046848
+  processed_queries: 260046847
+  skipped_target_queries: 1
+  xor_accumulator: 01110101111011100110011101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 261095424
+  processed_queries: 261095423
+  skipped_target_queries: 1
+  xor_accumulator: 10011000111111100111000110001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 262144000
+  processed_queries: 262143999
+  skipped_target_queries: 1
+  xor_accumulator: 01010001011100011100000110010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 263192576
+  processed_queries: 263192575
+  skipped_target_queries: 1
+  xor_accumulator: 10111000011000001101110111110
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 264241152
+  processed_queries: 264241151
+  skipped_target_queries: 1
+  xor_accumulator: 01010101011101101100111101010
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 265289728
+  processed_queries: 265289727
+  skipped_target_queries: 1
+  xor_accumulator: 01101101010100011100001101100
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 266338304
+  processed_queries: 266338303
+  skipped_target_queries: 1
+  xor_accumulator: 11110011111100001110110111111
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 267386880
+  processed_queries: 267386879
+  skipped_target_queries: 1
+  xor_accumulator: 10110101100101000110010111001
+  partial: true
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+progress:
+  next_assignment: 268435456
+  processed_queries: 268435455
+  skipped_target_queries: 1
+  xor_accumulator: 01110101001100001110111101110
+  partial: false
+checkpoint_updated: forgery_attack/result/practical_forgery_attack_single_ivstart28/practical_forgery_attack_20260430_022658.checkpoint.json
+processed_queries: 268435455
+skipped_target_queries: 1
+partial: false
+forged_tag: 01110101001100001110111101110
+verification_xor: 00000000000000000000000000000
+verification: OK
+Forgery attack succeeded.
+forged_pair: (11000101000100001101000100010000000001010000100111000101000000001000000100000000110100010001000000000001000000001101000100001000, 01110101001100001110111101110)

@@ -1,0 +1,49 @@
+Run ID: pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903
+Output variant: pa
+Attack mode: forgery_attack
+Cipher: 1280
+Rounds: 1
+IV start bound: 28
+SAT threads: 5
+Task ID: 2
+Output root: /home/author/Twinkle/forgery_attack
+Output subdir: forgery_attack_single_ivstart28
+Bounds: none
+Min new coverage: default
+Low-gain min swaps: default
+Adaptive diversity: 0
+Max low-gain min swaps: default
+Start search ID: 1
+Python: /home/author/miniforge3/envs/sage/bin/python
+SAT solver: /home/author/sat-solvers/lingeling/treengeling
+Started at: 2026-04-29 22:29:03
+CNF path: /home/author/Twinkle/forgery_attack/cons/forgery_attack_single_ivstart28/cube_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903.cnf
+Solver log path: /home/author/Twinkle/forgery_attack/cons/forgery_attack_single_ivstart28/cube_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903_no1.solver.log
+Result path: /home/author/Twinkle/forgery_attack/result/forgery_attack_single_ivstart28/result_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903_no1.log
+
+2026-04-29 22:29:05,665 - TwinkleRoundF_in_ANF_form - INFO - Twinkle Round Function in ANF form
+2026-04-29 22:29:05,666 - TwinkleRoundF_in_ANF_form - INFO - Selected Variant: PA
+2026-04-29 22:29:05,666 - TwinkleRoundF_in_ANF_form - INFO - State size: 1280 bits (X=4, Y=4, L=80)
+#Run ID: pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903
+#Output Variant: pa
+#Attack Mode: forgery_attack
+#Cipher: 1280 (PA)
+#Round: 1, #IV_start =: 28, #thread: 5, START:
+1536 0
+F nonzero clause Added
+cnf_twinkle_sbox_withConstantInf Added
+CardEnc Added
+1-round twinkle cube Model Done:) var_num:2598, clause_num:20932
+CNF path: /home/author/Twinkle/forgery_attack/cons/forgery_attack_single_ivstart28/cube_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903.cnf
+Solve START: no.1
+solve cost: 2.422752 s
+Find!
+Solver log path: /home/author/Twinkle/forgery_attack/cons/forgery_attack_single_ivstart28/cube_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903_no1.solver.log
+Output has been saved to /home/author/Twinkle/forgery_attack/result/forgery_attack_single_ivstart28/result_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903_no1.log
+Result path: /home/author/Twinkle/forgery_attack/result/forgery_attack_single_ivstart28/result_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903_no1.log
+total cost: 5.453954 s
+__________End____________
+
+Finished at: 2026-04-29 22:29:11
+Total runtime seconds: 8
+Wrapper log path: /home/author/Twinkle/forgery_attack/logs/forgery_attack_single_ivstart28/run_pa_forgery_attack_twinkle1280_1r_ivstart28_sat5_task2_review_20260429_222903.log

@@ -1,0 +1,501 @@
+Run ID: pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541
+Output variant: pa
+Attack mode: key_recovery
+Cipher: 1280
+Rounds: 1
+IV start bound: 9
+SAT threads: 5
+Task ID: 1
+Output root: /home/author/Twinkle/cube_like_attack
+Output subdir: key_recovery_bounds1177_ivstart9
+Bounds: 1177
+Min new coverage: 1
+Low-gain min swaps: 2
+Adaptive diversity: 1
+Max low-gain min swaps: 4
+Start search ID: 1
+Python: /home/author/miniforge3/envs/sage/bin/python
+SAT solver: /home/author/sat-solvers/lingeling/treengeling
+Started at: 2026-04-29 22:25:41
+CNF path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.cnf
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no1.solver.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no1.log
+
+2026-04-29 22:25:43,827 - TwinkleRoundF_in_ANF_form - INFO - Twinkle Round Function in ANF form
+2026-04-29 22:25:43,828 - TwinkleRoundF_in_ANF_form - INFO - Selected Variant: PA
+2026-04-29 22:25:43,828 - TwinkleRoundF_in_ANF_form - INFO - State size: 1280 bits (X=4, Y=4, L=80)
+#Run ID: pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541
+#Output Variant: pa
+#Attack Mode: key_recovery
+#Cipher: 1280 (PA)
+#Round: 1, #IV_start =: 9, #thread: 5, START:
+#Continuous auxiliary/involved bounds: 1177
+#Min new coverage before diversity ban: 1
+#Low-gain min swaps: 2
+#Adaptive diversity: on
+#Max low-gain min swaps: 4
+1536 0
+F nonzero clause Added
+cnf_twinkle_sbox_withConstantInf Added
+CardEnc Added
+1-round twinkle cube Model Done:) var_num:2539, clause_num:20516
+CNF path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.cnf
+Initialized continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Solve START: no.1
+solve cost: 2.424862 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no1.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no1.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no1.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 180 / 1177 (+aux 90, +involved 90)
+Solve START: no.2
+solve cost: 1.470232 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no2.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no2.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no2.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 200 / 1177 (+aux 10, +involved 10)
+Repeated auxiliary expressions: ['k0 + k1', 'k16 + k17', 'k32 + k33', 'k48 + k49', 'k64 + k65', 'k84 + k85', 'k96 + k97', 'k112 + k113', 'k128 + k129', 'k132 + k133', 'k148 + k149', 'k164 + k165', 'k180 + k181', 'k196 + k197', 'k212 + k213', 'k228 + k229', 'k269 + k270', 'k301 + k302', 'k305 + k306', 'k317 + k318', 'k333 + k334', 'k349 + k350', 'k365 + k366', 'k381 + k382', 'k384 + k386', 'k400 + k402', 'k416 + k418', 'k432 + k434', 'k464 + k466', 'k476 + k478', 'k480 + k482', 'k496 + k498', 'k536 + k537', 'k552 + k553', 'k564 + k565', 'k568 + k569', 'k584 + k585', 'k600 + k601', 'k616 + k617', 'k632 + k633', 'k652 + k653', 'k668 + k669', 'k700 + k701', 'k716 + k717', 'k732 + k733', 'k736 + k737', 'k748 + k749', 'k764 + k765', 'k777 + k778', 'k793 + k794', 'k809 + k810', 'k825 + k826', 'k829 + k830', 'k841 + k842', 'k857 + k858', 'k873 + k874', 'k908 + k910', 'k940 + k942', 'k956 + k958', 'k972 + k974', 'k988 + k990', 'k1000 + k1002', 'k1004 + k1006', 'k1020 + k1022', 'k1028 + k1029', 'k1044 + k1045', 'k1060 + k1061', 'k1076 + k1077', 'k1088 + k1089', 'k1092 + k1093', 'k1108 + k1109', 'k1140 + k1141', 'k1152 + k1153', 'k1168 + k1169', 'k1184 + k1185', 'k1200 + k1201', 'k1216 + k1217', 'k1220 + k1221', 'k1248 + k1249', 'k1264 + k1265']
+Repeated involved key bits: ['k3', 'k19', 'k35', 'k51', 'k67', 'k87', 'k99', 'k115', 'k130', 'k134', 'k150', 'k166', 'k182', 'k198', 'k214', 'k230', 'k271', 'k303', 'k307', 'k319', 'k335', 'k351', 'k367', 'k383', 'k387', 'k403', 'k419', 'k435', 'k467', 'k479', 'k483', 'k499', 'k539', 'k555', 'k567', 'k571', 'k587', 'k603', 'k619', 'k635', 'k654', 'k670', 'k702', 'k718', 'k734', 'k738', 'k750', 'k766', 'k779', 'k795', 'k811', 'k827', 'k831', 'k843', 'k859', 'k875', 'k911', 'k943', 'k959', 'k975', 'k991', 'k1003', 'k1007', 'k1023', 'k1031', 'k1047', 'k1063', 'k1079', 'k1091', 'k1095', 'k1111', 'k1143', 'k1154', 'k1170', 'k1186', 'k1202', 'k1218', 'k1222', 'k1250', 'k1266']
+Solve START: no.3
+solve cost: 2.426250 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no3.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no3.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no3.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 240 / 1177 (+aux 20, +involved 20)
+Repeated auxiliary expressions: ['k0 + k1', 'k16 + k17', 'k32 + k33', 'k48 + k49', 'k84 + k85', 'k96 + k97', 'k112 + k113', 'k128 + k129', 'k132 + k133', 'k148 + k149', 'k164 + k165', 'k180 + k181', 'k212 + k213', 'k228 + k229', 'k269 + k270', 'k301 + k302', 'k305 + k306', 'k317 + k318', 'k349 + k350', 'k365 + k366', 'k381 + k382', 'k384 + k386', 'k400 + k402', 'k416 + k418', 'k432 + k434', 'k476 + k478', 'k480 + k482', 'k496 + k498', 'k536 + k537', 'k552 + k553', 'k564 + k565', 'k568 + k569', 'k584 + k585', 'k616 + k617', 'k632 + k633', 'k652 + k653', 'k668 + k669', 'k700 + k701', 'k716 + k717', 'k736 + k737', 'k748 + k749', 'k764 + k765', 'k777 + k778', 'k793 + k794', 'k809 + k810', 'k825 + k826', 'k829 + k830', 'k841 + k842', 'k857 + k858', 'k908 + k910', 'k940 + k942', 'k956 + k958', 'k972 + k974', 'k988 + k990', 'k1000 + k1002', 'k1020 + k1022', 'k1028 + k1029', 'k1044 + k1045', 'k1060 + k1061', 'k1076 + k1077', 'k1088 + k1089', 'k1092 + k1093', 'k1108 + k1109', 'k1168 + k1169', 'k1184 + k1185', 'k1200 + k1201', 'k1216 + k1217', 'k1220 + k1221', 'k1248 + k1249', 'k1264 + k1265']
+Repeated involved key bits: ['k3', 'k19', 'k35', 'k51', 'k87', 'k99', 'k115', 'k130', 'k134', 'k150', 'k166', 'k182', 'k214', 'k230', 'k271', 'k303', 'k307', 'k319', 'k351', 'k367', 'k383', 'k387', 'k403', 'k419', 'k435', 'k479', 'k483', 'k499', 'k539', 'k555', 'k567', 'k571', 'k587', 'k619', 'k635', 'k654', 'k670', 'k702', 'k718', 'k738', 'k750', 'k766', 'k779', 'k795', 'k811', 'k827', 'k831', 'k843', 'k859', 'k911', 'k943', 'k959', 'k975', 'k991', 'k1003', 'k1023', 'k1031', 'k1047', 'k1063', 'k1079', 'k1091', 'k1095', 'k1111', 'k1170', 'k1186', 'k1202', 'k1218', 'k1222', 'k1250', 'k1266']
+Solve START: no.4
+solve cost: 1.420496 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no4.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no4.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no4.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no4.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.5
+solve cost: 1.372806 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no5.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no5.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no5.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no5.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.6
+solve cost: 1.372575 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no6.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no6.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no6.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 320 / 1177 (+aux 40, +involved 40)
+Repeated auxiliary expressions: ['k0 + k1', 'k12 + k13', 'k16 + k17', 'k84 + k85', 'k92 + k93', 'k128 + k129', 'k132 + k133', 'k152 + k153', 'k168 + k169', 'k180 + k181', 'k269 + k270', 'k305 + k306', 'k329 + k330', 'k345 + k346', 'k349 + k350', 'k384 + k386', 'k400 + k402', 'k404 + k406', 'k476 + k478', 'k484 + k486', 'k524 + k525', 'k536 + k537', 'k540 + k541', 'k564 + k565', 'k584 + k585', 'k668 + k669', 'k696 + k697', 'k712 + k713', 'k736 + k737', 'k748 + k749', 'k809 + k810', 'k825 + k826', 'k829 + k830', 'k837 + k838', 'k885 + k886', 'k896 + k898', 'k912 + k914', 'k940 + k942', 'k988 + k990', 'k1000 + k1002', 'k1060 + k1061', 'k1076 + k1077', 'k1088 + k1089', 'k1096 + k1097', 'k1144 + k1145', 'k1168 + k1169', 'k1180 + k1181', 'k1196 + k1197', 'k1216 + k1217', 'k1220 + k1221']
+Repeated involved key bits: ['k3', 'k15', 'k19', 'k87', 'k95', 'k130', 'k134', 'k154', 'k170', 'k182', 'k271', 'k307', 'k331', 'k347', 'k351', 'k387', 'k403', 'k407', 'k479', 'k487', 'k527', 'k539', 'k543', 'k567', 'k587', 'k670', 'k698', 'k714', 'k738', 'k750', 'k811', 'k827', 'k831', 'k839', 'k887', 'k899', 'k915', 'k943', 'k991', 'k1003', 'k1063', 'k1079', 'k1091', 'k1099', 'k1147', 'k1170', 'k1182', 'k1198', 'k1218', 'k1222']
+Solve START: no.7
+solve cost: 1.419637 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no7.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no7.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no7.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 340 / 1177 (+aux 10, +involved 10)
+Repeated auxiliary expressions: ['k12 + k13', 'k16 + k17', 'k20 + k21', 'k52 + k53', 'k68 + k69', 'k84 + k85', 'k92 + k93', 'k100 + k101', 'k128 + k129', 'k152 + k153', 'k160 + k161', 'k168 + k169', 'k176 + k177', 'k180 + k181', 'k192 + k193', 'k208 + k209', 'k257 + k258', 'k273 + k274', 'k305 + k306', 'k329 + k330', 'k345 + k346', 'k349 + k350', 'k353 + k354', 'k369 + k370', 'k384 + k386', 'k404 + k406', 'k412 + k414', 'k460 + k462', 'k476 + k478', 'k484 + k486', 'k492 + k494', 'k508 + k510', 'k516 + k517', 'k524 + k525', 'k540 + k541', 'k564 + k565', 'k584 + k585', 'k596 + k597', 'k612 + k613', 'k628 + k629', 'k656 + k657', 'k672 + k673', 'k688 + k689', 'k696 + k697', 'k704 + k705', 'k712 + k713', 'k736 + k737', 'k748 + k749', 'k797 + k798', 'k813 + k814', 'k825 + k826', 'k829 + k830', 'k837 + k838', 'k845 + k846', 'k885 + k886', 'k893 + k894', 'k896 + k898', 'k904 + k906', 'k912 + k914', 'k920 + k922', 'k936 + k938', 'k952 + k954', 'k988 + k990', 'k1000 + k1002', 'k1024 + k1025', 'k1060 + k1061', 'k1072 + k1073', 'k1088 + k1089', 'k1096 + k1097', 'k1104 + k1105', 'k1120 + k1121', 'k1144 + k1145', 'k1156 + k1157', 'k1168 + k1169', 'k1172 + k1173', 'k1180 + k1181', 'k1188 + k1189', 'k1196 + k1197', 'k1220 + k1221', 'k1268 + k1269']
+Repeated involved key bits: ['k15', 'k19', 'k23', 'k55', 'k71', 'k87', 'k95', 'k103', 'k130', 'k154', 'k162', 'k170', 'k178', 'k182', 'k194', 'k210', 'k259', 'k275', 'k307', 'k331', 'k347', 'k351', 'k355', 'k371', 'k387', 'k407', 'k415', 'k463', 'k479', 'k487', 'k495', 'k511', 'k519', 'k527', 'k543', 'k567', 'k587', 'k599', 'k615', 'k631', 'k658', 'k674', 'k690', 'k698', 'k706', 'k714', 'k738', 'k750', 'k799', 'k815', 'k827', 'k831', 'k839', 'k847', 'k887', 'k895', 'k899', 'k907', 'k915', 'k923', 'k939', 'k955', 'k991', 'k1003', 'k1027', 'k1063', 'k1075', 'k1091', 'k1099', 'k1107', 'k1123', 'k1147', 'k1158', 'k1170', 'k1174', 'k1182', 'k1190', 'k1198', 'k1222', 'k1270']
+Solve START: no.8
+solve cost: 1.319108 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no8.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no8.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no8.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 360 / 1177 (+aux 10, +involved 10)
+Repeated auxiliary expressions: ['k12 + k13', 'k16 + k17', 'k20 + k21', 'k52 + k53', 'k68 + k69', 'k84 + k85', 'k92 + k93', 'k116 + k117', 'k128 + k129', 'k152 + k153', 'k160 + k161', 'k168 + k169', 'k180 + k181', 'k192 + k193', 'k208 + k209', 'k224 + k225', 'k273 + k274', 'k305 + k306', 'k329 + k330', 'k337 + k338', 'k345 + k346', 'k349 + k350', 'k353 + k354', 'k369 + k370', 'k384 + k386', 'k404 + k406', 'k412 + k414', 'k444 + k446', 'k476 + k478', 'k484 + k486', 'k492 + k494', 'k508 + k510', 'k516 + k517', 'k524 + k525', 'k532 + k533', 'k540 + k541', 'k564 + k565', 'k584 + k585', 'k596 + k597', 'k628 + k629', 'k640 + k641', 'k656 + k657', 'k672 + k673', 'k696 + k697', 'k704 + k705', 'k712 + k713', 'k736 + k737', 'k748 + k749', 'k797 + k798', 'k813 + k814', 'k825 + k826', 'k829 + k830', 'k837 + k838', 'k861 + k862', 'k885 + k886', 'k893 + k894', 'k896 + k898', 'k904 + k906', 'k912 + k914', 'k936 + k938', 'k952 + k954', 'k968 + k970', 'k988 + k990', 'k1000 + k1002', 'k1024 + k1025', 'k1056 + k1057', 'k1060 + k1061', 'k1088 + k1089', 'k1096 + k1097', 'k1104 + k1105', 'k1120 + k1121', 'k1144 + k1145', 'k1156 + k1157', 'k1168 + k1169', 'k1180 + k1181', 'k1188 + k1189', 'k1196 + k1197', 'k1220 + k1221', 'k1252 + k1253', 'k1268 + k1269']
+Repeated involved key bits: ['k15', 'k19', 'k23', 'k55', 'k71', 'k87', 'k95', 'k119', 'k130', 'k154', 'k162', 'k170', 'k182', 'k194', 'k210', 'k226', 'k275', 'k307', 'k331', 'k339', 'k347', 'k351', 'k355', 'k371', 'k387', 'k407', 'k415', 'k447', 'k479', 'k487', 'k495', 'k511', 'k519', 'k527', 'k535', 'k543', 'k567', 'k587', 'k599', 'k631', 'k642', 'k658', 'k674', 'k698', 'k706', 'k714', 'k738', 'k750', 'k799', 'k815', 'k827', 'k831', 'k839', 'k863', 'k887', 'k895', 'k899', 'k907', 'k915', 'k939', 'k955', 'k971', 'k991', 'k1003', 'k1027', 'k1059', 'k1063', 'k1091', 'k1099', 'k1107', 'k1123', 'k1147', 'k1158', 'k1170', 'k1182', 'k1190', 'k1198', 'k1222', 'k1254', 'k1270']
+Solve START: no.9
+solve cost: 0.666173 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no9.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no9.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no9.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no9.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.10
+solve cost: 0.666361 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no10.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no10.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no10.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 420 / 1177 (+aux 30, +involved 30)
+Repeated auxiliary expressions: ['k12 + k13', 'k16 + k17', 'k36 + k37', 'k52 + k53', 'k84 + k85', 'k92 + k93', 'k128 + k129', 'k152 + k153', 'k160 + k161', 'k168 + k169', 'k180 + k181', 'k240 + k241', 'k273 + k274', 'k305 + k306', 'k321 + k322', 'k329 + k330', 'k345 + k346', 'k349 + k350', 'k384 + k386', 'k396 + k398', 'k404 + k406', 'k476 + k478', 'k484 + k486', 'k508 + k510', 'k524 + k525', 'k540 + k541', 'k548 + k549', 'k564 + k565', 'k584 + k585', 'k596 + k597', 'k696 + k697', 'k704 + k705', 'k712 + k713', 'k736 + k737', 'k748 + k749', 'k752 + k753', 'k781 + k782', 'k797 + k798', 'k825 + k826', 'k829 + k830', 'k837 + k838', 'k885 + k886', 'k896 + k898', 'k904 + k906', 'k912 + k914', 'k984 + k986', 'k988 + k990', 'k1000 + k1002', 'k1060 + k1061', 'k1088 + k1089', 'k1096 + k1097', 'k1120 + k1121', 'k1136 + k1137', 'k1144 + k1145', 'k1168 + k1169', 'k1180 + k1181', 'k1188 + k1189', 'k1196 + k1197', 'k1220 + k1221', 'k1236 + k1237']
+Repeated involved key bits: ['k15', 'k19', 'k39', 'k55', 'k87', 'k95', 'k130', 'k154', 'k162', 'k170', 'k182', 'k242', 'k275', 'k307', 'k323', 'k331', 'k347', 'k351', 'k387', 'k399', 'k407', 'k479', 'k487', 'k511', 'k527', 'k543', 'k551', 'k567', 'k587', 'k599', 'k698', 'k706', 'k714', 'k738', 'k750', 'k754', 'k783', 'k799', 'k827', 'k831', 'k839', 'k887', 'k899', 'k907', 'k915', 'k987', 'k991', 'k1003', 'k1063', 'k1091', 'k1099', 'k1123', 'k1139', 'k1147', 'k1170', 'k1182', 'k1190', 'k1198', 'k1222', 'k1238']
+Solve START: no.11
+solve cost: 0.666072 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no11.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no11.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no11.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 440 / 1177 (+aux 10, +involved 10)
+Repeated auxiliary expressions: ['k12 + k13', 'k16 + k17', 'k24 + k25', 'k36 + k37', 'k52 + k53', 'k84 + k85', 'k92 + k93', 'k104 + k105', 'k128 + k129', 'k152 + k153', 'k160 + k161', 'k168 + k169', 'k180 + k181', 'k188 + k189', 'k204 + k205', 'k240 + k241', 'k261 + k262', 'k273 + k274', 'k277 + k278', 'k305 + k306', 'k321 + k322', 'k329 + k330', 'k345 + k346', 'k349 + k350', 'k384 + k386', 'k396 + k398', 'k404 + k406', 'k440 + k442', 'k476 + k478', 'k484 + k486', 'k488 + k490', 'k508 + k510', 'k524 + k525', 'k528 + k529', 'k540 + k541', 'k544 + k545', 'k548 + k549', 'k564 + k565', 'k584 + k585', 'k596 + k597', 'k696 + k697', 'k704 + k705', 'k712 + k713', 'k724 + k725', 'k736 + k737', 'k740 + k741', 'k748 + k749', 'k752 + k753', 'k781 + k782', 'k785 + k786', 'k797 + k798', 'k825 + k826', 'k829 + k830', 'k833 + k834', 'k837 + k838', 'k885 + k886', 'k896 + k898', 'k904 + k906', 'k912 + k914', 'k984 + k986', 'k988 + k990', 'k996 + k998', 'k1000 + k1002', 'k1012 + k1014', 'k1036 + k1037', 'k1060 + k1061', 'k1088 + k1089', 'k1096 + k1097', 'k1116 + k1117', 'k1120 + k1121', 'k1136 + k1137', 'k1144 + k1145', 'k1160 + k1161', 'k1168 + k1169', 'k1180 + k1181', 'k1188 + k1189', 'k1196 + k1197', 'k1220 + k1221', 'k1236 + k1237', 'k1272 + k1273']
+Repeated involved key bits: ['k15', 'k19', 'k27', 'k39', 'k55', 'k87', 'k95', 'k107', 'k130', 'k154', 'k162', 'k170', 'k182', 'k190', 'k206', 'k242', 'k263', 'k275', 'k279', 'k307', 'k323', 'k331', 'k347', 'k351', 'k387', 'k399', 'k407', 'k443', 'k479', 'k487', 'k491', 'k511', 'k527', 'k531', 'k543', 'k547', 'k551', 'k567', 'k587', 'k599', 'k698', 'k706', 'k714', 'k726', 'k738', 'k742', 'k750', 'k754', 'k783', 'k787', 'k799', 'k827', 'k831', 'k835', 'k839', 'k887', 'k899', 'k907', 'k915', 'k987', 'k991', 'k999', 'k1003', 'k1015', 'k1039', 'k1063', 'k1091', 'k1099', 'k1119', 'k1123', 'k1139', 'k1147', 'k1162', 'k1170', 'k1182', 'k1190', 'k1198', 'k1222', 'k1238', 'k1274']
+Solve START: no.12
+solve cost: 0.665962 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no12.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no12.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no12.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no12.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.13
+solve cost: 0.666269 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no13.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no13.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no13.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 540 / 1177 (+aux 50, +involved 50)
+Repeated auxiliary expressions: ['k12 + k13', 'k16 + k17', 'k84 + k85', 'k92 + k93', 'k128 + k129', 'k152 + k153', 'k168 + k169', 'k180 + k181', 'k305 + k306', 'k329 + k330', 'k345 + k346', 'k349 + k350', 'k384 + k386', 'k404 + k406', 'k476 + k478', 'k484 + k486', 'k524 + k525', 'k540 + k541', 'k564 + k565', 'k584 + k585', 'k696 + k697', 'k712 + k713', 'k736 + k737', 'k748 + k749', 'k825 + k826', 'k829 + k830', 'k837 + k838', 'k885 + k886', 'k896 + k898', 'k912 + k914', 'k988 + k990', 'k1000 + k1002', 'k1060 + k1061', 'k1088 + k1089', 'k1096 + k1097', 'k1144 + k1145', 'k1168 + k1169', 'k1180 + k1181', 'k1196 + k1197', 'k1220 + k1221']
+Repeated involved key bits: ['k15', 'k19', 'k87', 'k95', 'k130', 'k154', 'k170', 'k182', 'k307', 'k331', 'k347', 'k351', 'k387', 'k407', 'k479', 'k487', 'k527', 'k543', 'k567', 'k587', 'k698', 'k714', 'k738', 'k750', 'k827', 'k831', 'k839', 'k887', 'k899', 'k915', 'k991', 'k1003', 'k1063', 'k1091', 'k1099', 'k1147', 'k1170', 'k1182', 'k1198', 'k1222']
+Solve START: no.14
+solve cost: 1.471802 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no14.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no14.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no14.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 560 / 1177 (+aux 10, +involved 10)
+Repeated auxiliary expressions: ['k8 + k9', 'k12 + k13', 'k40 + k41', 'k60 + k61', 'k84 + k85', 'k88 + k89', 'k92 + k93', 'k120 + k121', 'k128 + k129', 'k140 + k141', 'k152 + k153', 'k156 + k157', 'k168 + k169', 'k184 + k185', 'k236 + k237', 'k252 + k253', 'k305 + k306', 'k309 + k310', 'k313 + k314', 'k325 + k326', 'k329 + k330', 'k341 + k342', 'k345 + k346', 'k357 + k358', 'k404 + k406', 'k424 + k426', 'k436 + k438', 'k456 + k458', 'k472 + k474', 'k476 + k478', 'k484 + k486', 'k504 + k506', 'k524 + k525', 'k540 + k541', 'k556 + k557', 'k564 + k565', 'k576 + k577', 'k592 + k593', 'k608 + k609', 'k624 + k625', 'k644 + k645', 'k660 + k661', 'k676 + k677', 'k680 + k681', 'k692 + k693', 'k696 + k697', 'k712 + k713', 'k736 + k737', 'k769 + k770', 'k801 + k802', 'k805 + k806', 'k817 + k818', 'k829 + k830', 'k837 + k838', 'k849 + k850', 'k885 + k886', 'k896 + k898', 'k912 + k914', 'k916 + k918', 'k928 + k930', 'k932 + k934', 'k948 + k950', 'k964 + k966', 'k1000 + k1002', 'k1048 + k1049', 'k1052 + k1053', 'k1088 + k1089', 'k1096 + k1097', 'k1100 + k1101', 'k1132 + k1133', 'k1144 + k1145', 'k1148 + k1149', 'k1164 + k1165', 'k1180 + k1181', 'k1192 + k1193', 'k1196 + k1197', 'k1208 + k1209', 'k1220 + k1221', 'k1224 + k1225', 'k1240 + k1241']
+Repeated involved key bits: ['k11', 'k15', 'k43', 'k63', 'k87', 'k91', 'k95', 'k123', 'k130', 'k142', 'k154', 'k158', 'k170', 'k186', 'k238', 'k254', 'k307', 'k311', 'k315', 'k327', 'k331', 'k343', 'k347', 'k359', 'k407', 'k427', 'k439', 'k459', 'k475', 'k479', 'k487', 'k507', 'k527', 'k543', 'k559', 'k567', 'k579', 'k595', 'k611', 'k627', 'k646', 'k662', 'k678', 'k682', 'k694', 'k698', 'k714', 'k738', 'k771', 'k803', 'k807', 'k819', 'k831', 'k839', 'k851', 'k887', 'k899', 'k915', 'k919', 'k931', 'k935', 'k951', 'k967', 'k1003', 'k1051', 'k1055', 'k1091', 'k1099', 'k1103', 'k1135', 'k1147', 'k1151', 'k1166', 'k1182', 'k1194', 'k1198', 'k1210', 'k1222', 'k1226', 'k1242']
+Solve START: no.15
+solve cost: 1.419677 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no15.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no15.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no15.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 580 / 1177 (+aux 10, +involved 10)
+Repeated auxiliary expressions: ['k8 + k9', 'k12 + k13', 'k40 + k41', 'k60 + k61', 'k88 + k89', 'k92 + k93', 'k108 + k109', 'k120 + k121', 'k140 + k141', 'k152 + k153', 'k156 + k157', 'k168 + k169', 'k184 + k185', 'k200 + k201', 'k236 + k237', 'k252 + k253', 'k297 + k298', 'k309 + k310', 'k313 + k314', 'k325 + k326', 'k329 + k330', 'k341 + k342', 'k345 + k346', 'k357 + k358', 'k388 + k390', 'k404 + k406', 'k424 + k426', 'k436 + k438', 'k456 + k458', 'k472 + k474', 'k484 + k486', 'k504 + k506', 'k524 + k525', 'k540 + k541', 'k556 + k557', 'k572 + k573', 'k576 + k577', 'k592 + k593', 'k608 + k609', 'k624 + k625', 'k644 + k645', 'k660 + k661', 'k664 + k665', 'k676 + k677', 'k680 + k681', 'k692 + k693', 'k696 + k697', 'k712 + k713', 'k769 + k770', 'k801 + k802', 'k805 + k806', 'k817 + k818', 'k837 + k838', 'k849 + k850', 'k853 + k854', 'k885 + k886', 'k896 + k898', 'k912 + k914', 'k916 + k918', 'k928 + k930', 'k932 + k934', 'k944 + k946', 'k948 + k950', 'k964 + k966', 'k1048 + k1049', 'k1052 + k1053', 'k1096 + k1097', 'k1100 + k1101', 'k1128 + k1129', 'k1132 + k1133', 'k1144 + k1145', 'k1148 + k1149', 'k1164 + k1165', 'k1180 + k1181', 'k1192 + k1193', 'k1196 + k1197', 'k1208 + k1209', 'k1224 + k1225', 'k1240 + k1241', 'k1276 + k1277']
+Repeated involved key bits: ['k11', 'k15', 'k43', 'k63', 'k91', 'k95', 'k111', 'k123', 'k142', 'k154', 'k158', 'k170', 'k186', 'k202', 'k238', 'k254', 'k299', 'k311', 'k315', 'k327', 'k331', 'k343', 'k347', 'k359', 'k391', 'k407', 'k427', 'k439', 'k459', 'k475', 'k487', 'k507', 'k527', 'k543', 'k559', 'k575', 'k579', 'k595', 'k611', 'k627', 'k646', 'k662', 'k666', 'k678', 'k682', 'k694', 'k698', 'k714', 'k771', 'k803', 'k807', 'k819', 'k839', 'k851', 'k855', 'k887', 'k899', 'k915', 'k919', 'k931', 'k935', 'k947', 'k951', 'k967', 'k1051', 'k1055', 'k1099', 'k1103', 'k1131', 'k1135', 'k1147', 'k1151', 'k1166', 'k1182', 'k1194', 'k1198', 'k1210', 'k1226', 'k1242', 'k1278']
+Solve START: no.16
+solve cost: 1.518637 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no16.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no16.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no16.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no16.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.17
+solve cost: 1.419718 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no17.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no17.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no17.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 646 / 1177 (+aux 34, +involved 32)
+Repeated auxiliary expressions: ['k4 + k5', 'k24 + k25', 'k28 + k29', 'k32 + k33', 'k72 + k73', 'k100 + k101', 'k144 + k145', 'k176 + k177', 'k208 + k209', 'k216 + k217', 'k220 + k221', 'k228 + k229', 'k257 + k258', 'k281 + k282', 'k289 + k290', 'k301 + k302', 'k373 + k374', 'k392 + k394', 'k428 + k430', 'k460 + k462', 'k468 + k470', 'k496 + k498', 'k560 + k561', 'k572 + k573', 'k580 + k581', 'k588 + k589', 'k612 + k613', 'k632 + k633', 'k648 + k649', 'k688 + k689', 'k700 + k701', 'k708 + k709', 'k720 + k721', 'k736 + k737', 'k773 + k774', 'k841 + k842', 'k845 + k846', 'k877 + k878', 'k881 + k882', 'k900 + k902', 'k908 + k910', 'k920 + k922', 'k960 + k962', 'k1016 + k1018', 'k1036 + k1037', 'k1040 + k1041', 'k1044 + k1045', 'k1068 + k1069', 'k1072 + k1073', 'k1080 + k1081', 'k1172 + k1173', 'k1204 + k1205', 'k1248 + k1249', 'k1256 + k1257', 'k1260 + k1261', 'k1268 + k1269']
+Repeated involved key bits: ['k7', 'k19', 'k31', 'k35', 'k75', 'k103', 'k146', 'k178', 'k218', 'k222', 'k230', 'k259', 'k283', 'k291', 'k303', 'k375', 'k395', 'k431', 'k451', 'k463', 'k471', 'k499', 'k507', 'k559', 'k563', 'k583', 'k591', 'k615', 'k635', 'k650', 'k690', 'k702', 'k710', 'k722', 'k775', 'k843', 'k847', 'k851', 'k879', 'k883', 'k903', 'k907', 'k911', 'k923', 'k963', 'k971', 'k1019', 'k1043', 'k1047', 'k1071', 'k1075', 'k1083', 'k1143', 'k1174', 'k1206', 'k1250', 'k1258', 'k1262']
+Solve START: no.18
+solve cost: 1.368582 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no18.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no18.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no18.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 746 / 1177 (+aux 54, +involved 46)
+Repeated auxiliary expressions: ['k20 + k21', 'k104 + k105', 'k188 + k189', 'k192 + k193', 'k277 + k278', 'k369 + k370', 'k412 + k414', 'k488 + k490', 'k528 + k529', 'k552 + k553', 'k596 + k597', 'k624 + k625', 'k628 + k629', 'k632 + k633', 'k644 + k645', 'k648 + k649', 'k672 + k673', 'k716 + k717', 'k724 + k725', 'k740 + k741', 'k785 + k786', 'k893 + k894', 'k936 + k938', 'k996 + k998', 'k1024 + k1025', 'k1028 + k1029', 'k1036 + k1037', 'k1040 + k1041', 'k1064 + k1065', 'k1080 + k1081', 'k1156 + k1157', 'k1160 + k1161', 'k1180 + k1181', 'k1184 + k1185', 'k1192 + k1193', 'k1240 + k1241']
+Repeated involved key bits: ['k23', 'k43', 'k47', 'k55', 'k71', 'k87', 'k91', 'k107', 'k190', 'k194', 'k211', 'k263', 'k267', 'k279', 'k331', 'k371', 'k415', 'k447', 'k471', 'k487', 'k491', 'k499', 'k531', 'k575', 'k579', 'k631', 'k674', 'k742', 'k787', 'k815', 'k891', 'k895', 'k931', 'k935', 'k939', 'k983', 'k991', 'k999', 'k1027', 'k1039', 'k1059', 'k1079', 'k1158', 'k1162']
+Solve START: no.19
+solve cost: 1.369792 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no19.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no19.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no19.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 796 / 1177 (+aux 32, +involved 18)
+Repeated auxiliary expressions: ['k41 + k42', 'k44 + k46', 'k76 + k77', 'k84 + k86', 'k108 + k109', 'k120 + k121', 'k129 + k130', 'k137 + k138', 'k204 + k205', 'k232 + k233', 'k236 + k237', 'k248 + k250', 'k260 + k261', 'k265 + k266', 'k296 + k297', 'k328 + k329', 'k352 + k353', 'k357 + k358', 'k408 + k409', 'k420 + k422', 'k444 + k445', 'k468 + k469', 'k472 + k474', 'k484 + k485', 'k524 + k525', 'k552 + k553', 'k573 + k574', 'k576 + k577', 'k604 + k605', 'k624 + k625', 'k652 + k654', 'k656 + k657', 'k692 + k693', 'k716 + k717', 'k724 + k725', 'k760 + k761', 'k768 + k769', 'k801 + k802', 'k808 + k809', 'k812 + k813', 'k821 + k822', 'k916 + k918', 'k976 + k978', 'k980 + k981', 'k988 + k989', 'k1020 + k1021', 'k1032 + k1033', 'k1040 + k1041', 'k1052 + k1053', 'k1057 + k1058', 'k1064 + k1065', 'k1148 + k1149', 'k1168 + k1170', 'k1184 + k1185', 'k1188 + k1189', 'k1192 + k1193', 'k1240 + k1241', 'k1244 + k1245']
+Repeated involved key bits: ['k3', 'k43', 'k47', 'k79', 'k83', 'k87', 'k123', 'k127', 'k131', 'k139', 'k234', 'k238', 'k251', 'k267', 'k275', 'k298', 'k303', 'k331', 'k354', 'k359', 'k367', 'k395', 'k399', 'k410', 'k423', 'k447', 'k471', 'k475', 'k554', 'k575', 'k579', 'k587', 'k603', 'k607', 'k626', 'k631', 'k655', 'k683', 'k694', 'k719', 'k727', 'k762', 'k770', 'k803', 'k810', 'k815', 'k823', 'k835', 'k855', 'k871', 'k919', 'k923', 'k967', 'k979', 'k983', 'k991', 'k1022', 'k1027', 'k1035', 'k1042', 'k1059', 'k1066', 'k1071', 'k1083', 'k1151', 'k1171', 'k1179', 'k1183', 'k1187', 'k1195', 'k1242', 'k1246']
+Solve START: no.20
+solve cost: 1.319672 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no20.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no20.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no20.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 810 / 1177 (+aux 9, +involved 5)
+Repeated auxiliary expressions: ['k41 + k42', 'k44 + k46', 'k76 + k77', 'k81 + k82', 'k84 + k86', 'k108 + k109', 'k120 + k121', 'k125 + k126', 'k129 + k130', 'k137 + k138', 'k204 + k205', 'k232 + k233', 'k236 + k237', 'k240 + k242', 'k244 + k246', 'k248 + k250', 'k265 + k266', 'k272 + k273', 'k296 + k297', 'k300 + k302', 'k328 + k329', 'k352 + k353', 'k357 + k358', 'k364 + k365', 'k397 + k398', 'k408 + k409', 'k420 + k422', 'k432 + k433', 'k444 + k445', 'k468 + k469', 'k472 + k474', 'k484 + k485', 'k552 + k553', 'k573 + k574', 'k576 + k577', 'k584 + k586', 'k601 + k602', 'k604 + k605', 'k624 + k625', 'k629 + k630', 'k652 + k654', 'k660 + k662', 'k681 + k682', 'k692 + k693', 'k716 + k717', 'k720 + k722', 'k724 + k725', 'k760 + k761', 'k768 + k769', 'k801 + k802', 'k808 + k809', 'k812 + k813', 'k821 + k822', 'k832 + k833', 'k852 + k853', 'k868 + k870', 'k916 + k918', 'k920 + k921', 'k952 + k953', 'k965 + k966', 'k976 + k978', 'k980 + k981', 'k988 + k989', 'k1012 + k1013', 'k1020 + k1021', 'k1024 + k1026', 'k1032 + k1033', 'k1040 + k1041', 'k1057 + k1058', 'k1064 + k1065', 'k1069 + k1070', 'k1081 + k1082', 'k1148 + k1149', 'k1168 + k1170', 'k1172 + k1174', 'k1176 + k1178', 'k1181 + k1182', 'k1184 + k1185', 'k1192 + k1193', 'k1240 + k1241', 'k1244 + k1245']
+Repeated involved key bits: ['k31', 'k43', 'k47', 'k79', 'k83', 'k87', 'k110', 'k123', 'k127', 'k131', 'k139', 'k207', 'k234', 'k238', 'k243', 'k247', 'k251', 'k267', 'k271', 'k275', 'k298', 'k303', 'k331', 'k354', 'k359', 'k367', 'k399', 'k410', 'k423', 'k434', 'k447', 'k471', 'k475', 'k486', 'k554', 'k571', 'k575', 'k579', 'k587', 'k603', 'k607', 'k626', 'k631', 'k655', 'k663', 'k683', 'k694', 'k719', 'k723', 'k727', 'k762', 'k770', 'k803', 'k810', 'k815', 'k823', 'k835', 'k855', 'k867', 'k871', 'k919', 'k954', 'k967', 'k979', 'k983', 'k991', 'k1014', 'k1022', 'k1027', 'k1035', 'k1039', 'k1042', 'k1059', 'k1066', 'k1071', 'k1083', 'k1151', 'k1171', 'k1175', 'k1179', 'k1183', 'k1187', 'k1195', 'k1242', 'k1246']
+Solve START: no.21
+solve cost: 1.469500 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no21.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no21.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no21.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 848 / 1177 (+aux 21, +involved 17)
+Repeated auxiliary expressions: ['k0 + k2', 'k28 + k29', 'k41 + k42', 'k44 + k46', 'k84 + k85', 'k104 + k105', 'k128 + k129', 'k133 + k134', 'k137 + k138', 'k188 + k189', 'k216 + k217', 'k248 + k250', 'k260 + k261', 'k277 + k278', 'k281 + k282', 'k305 + k306', 'k328 + k329', 'k352 + k353', 'k392 + k393', 'k408 + k409', 'k444 + k445', 'k468 + k470', 'k476 + k478', 'k488 + k490', 'k524 + k525', 'k528 + k529', 'k540 + k541', 'k564 + k565', 'k573 + k574', 'k588 + k589', 'k616 + k617', 'k624 + k625', 'k640 + k641', 'k648 + k649', 'k652 + k654', 'k656 + k657', 'k660 + k661', 'k716 + k717', 'k736 + k737', 'k740 + k741', 'k768 + k769', 'k773 + k774', 'k785 + k786', 'k788 + k789', 'k812 + k813', 'k829 + k830', 'k920 + k921', 'k928 + k929', 'k960 + k962', 'k988 + k989', 'k996 + k998', 'k1000 + k1002', 'k1020 + k1021', 'k1036 + k1037', 'k1040 + k1041', 'k1052 + k1053', 'k1057 + k1058', 'k1080 + k1081', 'k1088 + k1089', 'k1128 + k1129', 'k1132 + k1133', 'k1160 + k1161', 'k1168 + k1170', 'k1172 + k1173', 'k1184 + k1185', 'k1188 + k1189', 'k1220 + k1221', 'k1256 + k1257', 'k1260 + k1261']
+Repeated involved key bits: ['k3', 'k23', 'k31', 'k43', 'k47', 'k51', 'k87', 'k107', 'k119', 'k130', 'k135', 'k139', 'k190', 'k218', 'k251', 'k262', 'k279', 'k283', 'k307', 'k327', 'k331', 'k354', 'k395', 'k407', 'k410', 'k447', 'k471', 'k475', 'k479', 'k491', 'k515', 'k526', 'k531', 'k567', 'k575', 'k591', 'k626', 'k650', 'k655', 'k659', 'k663', 'k719', 'k738', 'k742', 'k770', 'k775', 'k787', 'k790', 'k815', 'k827', 'k831', 'k919', 'k923', 'k939', 'k963', 'k991', 'k999', 'k1003', 'k1022', 'k1039', 'k1042', 'k1054', 'k1059', 'k1083', 'k1091', 'k1143', 'k1162', 'k1171', 'k1175', 'k1187', 'k1191', 'k1222', 'k1262']
+Solve START: no.22
+solve cost: 1.420755 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no22.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no22.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no22.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 859 / 1177 (+aux 4, +involved 7)
+Repeated auxiliary expressions: ['k0 + k2', 'k20 + k22', 'k28 + k29', 'k41 + k42', 'k44 + k46', 'k48 + k50', 'k84 + k85', 'k104 + k105', 'k128 + k129', 'k133 + k134', 'k137 + k138', 'k149 + k150', 'k188 + k189', 'k193 + k194', 'k216 + k217', 'k248 + k250', 'k260 + k261', 'k277 + k278', 'k281 + k282', 'k305 + k306', 'k328 + k329', 'k352 + k353', 'k360 + k361', 'k372 + k373', 'k392 + k393', 'k404 + k405', 'k408 + k409', 'k444 + k445', 'k452 + k453', 'k468 + k470', 'k472 + k473', 'k476 + k478', 'k488 + k490', 'k524 + k525', 'k528 + k529', 'k540 + k541', 'k564 + k565', 'k573 + k574', 'k588 + k589', 'k600 + k601', 'k616 + k617', 'k624 + k625', 'k640 + k641', 'k648 + k649', 'k652 + k654', 'k656 + k657', 'k660 + k661', 'k676 + k677', 'k716 + k717', 'k736 + k737', 'k740 + k741', 'k768 + k769', 'k773 + k774', 'k785 + k786', 'k788 + k789', 'k812 + k813', 'k824 + k825', 'k829 + k830', 'k836 + k837', 'k872 + k873', 'k916 + k917', 'k920 + k921', 'k936 + k937', 'k960 + k962', 'k988 + k989', 'k996 + k998', 'k1000 + k1002', 'k1020 + k1021', 'k1036 + k1037', 'k1040 + k1041', 'k1048 + k1049', 'k1052 + k1053', 'k1057 + k1058', 'k1080 + k1081', 'k1088 + k1089', 'k1128 + k1129', 'k1132 + k1133', 'k1160 + k1161', 'k1168 + k1170', 'k1172 + k1173', 'k1184 + k1185', 'k1188 + k1189', 'k1220 + k1221', 'k1256 + k1257', 'k1260 + k1261', 'k1272 + k1273']
+Repeated involved key bits: ['k3', 'k23', 'k31', 'k43', 'k47', 'k51', 'k87', 'k103', 'k107', 'k130', 'k135', 'k139', 'k151', 'k190', 'k195', 'k218', 'k251', 'k262', 'k279', 'k283', 'k307', 'k331', 'k354', 'k362', 'k374', 'k395', 'k407', 'k410', 'k447', 'k455', 'k471', 'k475', 'k479', 'k491', 'k526', 'k531', 'k542', 'k567', 'k575', 'k591', 'k618', 'k626', 'k643', 'k650', 'k655', 'k659', 'k663', 'k719', 'k738', 'k742', 'k770', 'k775', 'k787', 'k790', 'k815', 'k831', 'k838', 'k874', 'k903', 'k919', 'k923', 'k939', 'k963', 'k991', 'k999', 'k1003', 'k1022', 'k1039', 'k1042', 'k1054', 'k1059', 'k1083', 'k1091', 'k1130', 'k1134', 'k1162', 'k1171', 'k1175', 'k1187', 'k1191', 'k1222', 'k1259', 'k1262']
+Solve START: no.23
+solve cost: 1.468782 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no23.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no23.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no23.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 871 / 1177 (+aux 6, +involved 6)
+Repeated auxiliary expressions: ['k36 + k37', 'k41 + k42', 'k44 + k46', 'k48 + k50', 'k76 + k77', 'k84 + k85', 'k100 + k102', 'k104 + k105', 'k128 + k129', 'k137 + k138', 'k149 + k150', 'k177 + k178', 'k188 + k189', 'k232 + k233', 'k240 + k241', 'k248 + k250', 'k265 + k266', 'k277 + k278', 'k305 + k306', 'k321 + k322', 'k328 + k329', 'k352 + k353', 'k372 + k373', 'k376 + k377', 'k396 + k398', 'k408 + k409', 'k420 + k422', 'k444 + k445', 'k452 + k453', 'k472 + k473', 'k476 + k478', 'k488 + k490', 'k528 + k529', 'k540 + k541', 'k548 + k549', 'k564 + k565', 'k573 + k574', 'k600 + k601', 'k604 + k605', 'k624 + k625', 'k628 + k629', 'k640 + k641', 'k652 + k654', 'k676 + k677', 'k716 + k717', 'k736 + k737', 'k740 + k741', 'k744 + k745', 'k752 + k753', 'k760 + k761', 'k768 + k769', 'k781 + k782', 'k785 + k786', 'k812 + k813', 'k821 + k822', 'k824 + k825', 'k829 + k830', 'k836 + k837', 'k900 + k901', 'k936 + k937', 'k976 + k978', 'k984 + k986', 'k988 + k989', 'k996 + k998', 'k1000 + k1002', 'k1020 + k1021', 'k1032 + k1033', 'k1036 + k1037', 'k1040 + k1041', 'k1048 + k1049', 'k1057 + k1058', 'k1060 + k1061', 'k1088 + k1089', 'k1132 + k1133', 'k1136 + k1137', 'k1160 + k1161', 'k1168 + k1170', 'k1172 + k1173', 'k1184 + k1185', 'k1220 + k1221', 'k1236 + k1237', 'k1244 + k1245', 'k1272 + k1273', 'k1276 + k1277']
+Repeated involved key bits: ['k39', 'k43', 'k47', 'k51', 'k59', 'k79', 'k87', 'k103', 'k107', 'k130', 'k139', 'k151', 'k179', 'k190', 'k234', 'k242', 'k251', 'k267', 'k279', 'k307', 'k323', 'k331', 'k354', 'k374', 'k378', 'k399', 'k403', 'k410', 'k423', 'k447', 'k455', 'k475', 'k479', 'k491', 'k531', 'k542', 'k551', 'k567', 'k575', 'k602', 'k607', 'k626', 'k643', 'k655', 'k679', 'k719', 'k738', 'k742', 'k747', 'k754', 'k762', 'k770', 'k783', 'k787', 'k815', 'k823', 'k826', 'k831', 'k838', 'k903', 'k939', 'k963', 'k979', 'k987', 'k991', 'k999', 'k1003', 'k1022', 'k1035', 'k1039', 'k1042', 'k1050', 'k1059', 'k1091', 'k1134', 'k1139', 'k1162', 'k1171', 'k1175', 'k1187', 'k1222', 'k1238', 'k1246', 'k1275']
+Solve START: no.24
+solve cost: 1.519781 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no24.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no24.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no24.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 923 / 1177 (+aux 34, +involved 18)
+Repeated auxiliary expressions: ['k41 + k42', 'k44 + k46', 'k56 + k58', 'k76 + k77', 'k84 + k86', 'k129 + k130', 'k137 + k138', 'k173 + k174', 'k232 + k233', 'k248 + k250', 'k265 + k266', 'k284 + k285', 'k296 + k297', 'k328 + k329', 'k352 + k353', 'k400 + k401', 'k408 + k409', 'k420 + k422', 'k428 + k429', 'k444 + k445', 'k468 + k469', 'k544 + k545', 'k552 + k553', 'k573 + k574', 'k604 + k605', 'k624 + k625', 'k628 + k629', 'k652 + k654', 'k668 + k669', 'k716 + k717', 'k724 + k725', 'k744 + k745', 'k760 + k761', 'k768 + k769', 'k808 + k809', 'k812 + k813', 'k821 + k822', 'k836 + k837', 'k844 + k845', 'k960 + k961', 'k976 + k978', 'k980 + k981', 'k988 + k989', 'k1020 + k1021', 'k1024 + k1025', 'k1032 + k1033', 'k1040 + k1041', 'k1057 + k1058', 'k1060 + k1061', 'k1064 + k1065', 'k1168 + k1170', 'k1184 + k1185', 'k1192 + k1193', 'k1244 + k1245', 'k1264 + k1265', 'k1276 + k1277']
+Repeated involved key bits: ['k23', 'k43', 'k47', 'k59', 'k63', 'k67', 'k79', 'k87', 'k95', 'k131', 'k139', 'k151', 'k175', 'k195', 'k234', 'k251', 'k267', 'k286', 'k298', 'k323', 'k331', 'k335', 'k354', 'k359', 'k403', 'k410', 'k423', 'k431', 'k447', 'k471', 'k554', 'k575', 'k583', 'k607', 'k611', 'k626', 'k630', 'k635', 'k651', 'k655', 'k719', 'k727', 'k747', 'k762', 'k770', 'k803', 'k810', 'k815', 'k823', 'k839', 'k846', 'k859', 'k911', 'k963', 'k979', 'k983', 'k991', 'k1022', 'k1035', 'k1042', 'k1059', 'k1062', 'k1066', 'k1099', 'k1103', 'k1111', 'k1171', 'k1187', 'k1195', 'k1246', 'k1271', 'k1279']
+Solve START: no.25
+solve cost: 1.418681 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no25.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no25.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no25.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no25.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.26
+solve cost: 1.469283 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no26.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no26.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no26.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 936 / 1177 (+aux 9, +involved 4)
+Repeated auxiliary expressions: ['k32 + k33', 'k36 + k37', 'k40 + k41', 'k48 + k49', 'k80 + k81', 'k88 + k89', 'k92 + k93', 'k124 + k125', 'k140 + k141', 'k148 + k149', 'k152 + k153', 'k228 + k229', 'k240 + k241', 'k244 + k245', 'k248 + k249', 'k252 + k253', 'k285 + k286', 'k301 + k302', 'k321 + k322', 'k325 + k326', 'k341 + k342', 'k345 + k346', 'k377 + k378', 'k381 + k382', 'k396 + k398', 'k404 + k406', 'k424 + k426', 'k448 + k450', 'k480 + k482', 'k496 + k498', 'k500 + k502', 'k504 + k506', 'k520 + k521', 'k524 + k525', 'k548 + k549', 'k552 + k553', 'k592 + k593', 'k608 + k609', 'k620 + k621', 'k632 + k633', 'k652 + k653', 'k660 + k661', 'k676 + k677', 'k684 + k685', 'k700 + k701', 'k712 + k713', 'k744 + k745', 'k752 + k753', 'k769 + k770', 'k781 + k782', 'k837 + k838', 'k841 + k842', 'k849 + k850', 'k857 + k858', 'k869 + k870', 'k889 + k890', 'k896 + k898', 'k908 + k910', 'k924 + k926', 'k932 + k934', 'k948 + k950', 'k956 + k958', 'k968 + k969', 'k984 + k986', 'k992 + k994', 'k1028 + k1029', 'k1044 + k1045', 'k1052 + k1053', 'k1100 + k1101', 'k1112 + k1113', 'k1124 + k1125', 'k1136 + k1137', 'k1144 + k1145', 'k1196 + k1197', 'k1200 + k1201', 'k1208 + k1209', 'k1224 + k1225', 'k1228 + k1229', 'k1232 + k1233', 'k1236 + k1237', 'k1248 + k1249']
+Repeated involved key bits: ['k35', 'k39', 'k43', 'k47', 'k51', 'k83', 'k91', 'k95', 'k127', 'k135', 'k142', 'k150', 'k154', 'k230', 'k242', 'k246', 'k250', 'k254', 'k287', 'k303', 'k323', 'k327', 'k343', 'k347', 'k351', 'k379', 'k383', 'k399', 'k407', 'k427', 'k451', 'k483', 'k499', 'k503', 'k507', 'k523', 'k527', 'k551', 'k555', 'k595', 'k611', 'k619', 'k623', 'k635', 'k654', 'k662', 'k678', 'k686', 'k702', 'k714', 'k746', 'k754', 'k771', 'k783', 'k839', 'k843', 'k851', 'k859', 'k871', 'k883', 'k891', 'k899', 'k911', 'k927', 'k935', 'k951', 'k959', 'k987', 'k995', 'k1031', 'k1047', 'k1055', 'k1103', 'k1115', 'k1127', 'k1139', 'k1147', 'k1151', 'k1198', 'k1202', 'k1210', 'k1226', 'k1230', 'k1234', 'k1238', 'k1250']
+Solve START: no.27
+solve cost: 1.369783 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no27.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no27.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no27.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 956 / 1177 (+aux 12, +involved 8)
+Repeated auxiliary expressions: ['k4 + k5', 'k16 + k17', 'k40 + k41', 'k44 + k45', 'k48 + k49', 'k52 + k53', 'k112 + k113', 'k124 + k125', 'k128 + k129', 'k136 + k137', 'k144 + k145', 'k148 + k149', 'k160 + k161', 'k180 + k181', 'k212 + k213', 'k248 + k249', 'k273 + k274', 'k289 + k290', 'k317 + k318', 'k328 + k329', 'k349 + k350', 'k361 + k362', 'k377 + k378', 'k381 + k382', 'k384 + k386', 'k416 + k418', 'k428 + k430', 'k436 + k437', 'k452 + k454', 'k480 + k482', 'k500 + k502', 'k508 + k510', 'k520 + k521', 'k552 + k553', 'k580 + k581', 'k584 + k585', 'k596 + k597', 'k616 + k617', 'k620 + k621', 'k636 + k637', 'k652 + k653', 'k704 + k705', 'k716 + k717', 'k720 + k721', 'k728 + k729', 'k744 + k745', 'k748 + k749', 'k756 + k757', 'k789 + k790', 'k793 + k794', 'k797 + k798', 'k825 + k826', 'k857 + k858', 'k869 + k870', 'k877 + k878', 'k904 + k906', 'k956 + k958', 'k988 + k990', 'k992 + k994', 'k1008 + k1010', 'k1016 + k1018', 'k1020 + k1022', 'k1028 + k1029', 'k1032 + k1033', 'k1040 + k1041', 'k1060 + k1061', 'k1064 + k1065', 'k1092 + k1093', 'k1112 + k1113', 'k1120 + k1121', 'k1168 + k1169', 'k1188 + k1189', 'k1200 + k1201', 'k1204 + k1205', 'k1212 + k1213', 'k1224 + k1225', 'k1228 + k1229', 'k1264 + k1265']
+Repeated involved key bits: ['k7', 'k19', 'k47', 'k51', 'k55', 'k115', 'k119', 'k127', 'k131', 'k138', 'k146', 'k150', 'k162', 'k182', 'k214', 'k250', 'k275', 'k291', 'k319', 'k347', 'k351', 'k363', 'k379', 'k383', 'k387', 'k419', 'k431', 'k435', 'k439', 'k455', 'k483', 'k503', 'k511', 'k555', 'k583', 'k587', 'k599', 'k607', 'k619', 'k623', 'k639', 'k654', 'k706', 'k718', 'k722', 'k730', 'k746', 'k750', 'k791', 'k795', 'k799', 'k827', 'k859', 'k867', 'k871', 'k879', 'k907', 'k951', 'k955', 'k959', 'k991', 'k995', 'k1011', 'k1019', 'k1023', 'k1031', 'k1043', 'k1063', 'k1067', 'k1095', 'k1115', 'k1123', 'k1127', 'k1170', 'k1190', 'k1202', 'k1206', 'k1214', 'k1227', 'k1230', 'k1259', 'k1266']
+Solve START: no.28
+solve cost: 1.418753 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no28.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no28.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no28.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no28.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.29
+solve cost: 1.370036 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no29.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no29.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no29.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no29.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.30
+solve cost: 1.374227 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no30.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no30.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no30.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 1031 / 1177 (+aux 35, +involved 40)
+Repeated auxiliary expressions: ['k20 + k22', 'k88 + k90', 'k141 + k142', 'k193 + k194', 'k272 + k273', 'k316 + k317', 'k356 + k357', 'k360 + k361', 'k396 + k397', 'k404 + k405', 'k496 + k497', 'k512 + k513', 'k556 + k557', 'k568 + k569', 'k576 + k577', 'k584 + k585', 'k596 + k597', 'k616 + k617', 'k620 + k621', 'k636 + k637', 'k648 + k649', 'k660 + k661', 'k672 + k673', 'k688 + k689', 'k692 + k693', 'k700 + k701', 'k708 + k709', 'k752 + k753', 'k764 + k765', 'k856 + k857', 'k872 + k873', 'k876 + k877', 'k880 + k881', 'k916 + k917', 'k928 + k929', 'k952 + k953', 'k1012 + k1013', 'k1028 + k1029', 'k1056 + k1057', 'k1084 + k1085', 'k1096 + k1097', 'k1100 + k1101', 'k1120 + k1121', 'k1128 + k1129', 'k1144 + k1145', 'k1148 + k1149', 'k1156 + k1157', 'k1160 + k1161', 'k1168 + k1169', 'k1176 + k1177', 'k1180 + k1181', 'k1204 + k1205', 'k1220 + k1221', 'k1232 + k1233', 'k1256 + k1257']
+Repeated involved key bits: ['k7', 'k23', 'k31', 'k35', 'k55', 'k83', 'k91', 'k95', 'k99', 'k143', 'k195', 'k247', 'k318', 'k362', 'k399', 'k407', 'k423', 'k427', 'k443', 'k463', 'k491', 'k499', 'k503', 'k598', 'k618', 'k651', 'k663', 'k691', 'k695', 'k711', 'k755', 'k874', 'k878', 'k907', 'k919', 'k931', 'k943', 'k955', 'k999', 'k1007', 'k1015', 'k1019', 'k1030', 'k1130', 'k1159', 'k1171', 'k1179', 'k1183', 'k1207', 'k1259']
+Solve START: no.31
+solve cost: 1.471040 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no31.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no31.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no31.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no31.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.32
+solve cost: 1.370608 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no32.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no32.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no32.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no32.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.33
+solve cost: 1.419849 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no33.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no33.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no33.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no33.log
+Adaptive diversity increased low-gain min swaps to 3
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.34
+solve cost: 1.319449 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no34.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no34.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no34.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no34.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=3, clauses=36
+Solve START: no.35
+solve cost: 1.368665 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no35.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no35.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no35.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no35.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=3, clauses=36
+Solve START: no.36
+solve cost: 1.375015 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no36.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no36.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no36.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no36.log
+Adaptive diversity increased low-gain min swaps to 4
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=3, clauses=36
+Solve START: no.37
+solve cost: 1.371581 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no37.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no37.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no37.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 1079 / 1177 (+aux 19, +involved 29)
+Repeated auxiliary expressions: ['k16 + k18', 'k56 + k58', 'k80 + k82', 'k92 + k93', 'k152 + k153', 'k173 + k174', 'k181 + k182', 'k245 + k246', 'k268 + k269', 'k276 + k277', 'k284 + k285', 'k320 + k321', 'k324 + k325', 'k340 + k341', 'k345 + k346', 'k388 + k389', 'k400 + k401', 'k404 + k406', 'k440 + k441', 'k448 + k449', 'k504 + k505', 'k516 + k517', 'k524 + k525', 'k528 + k529', 'k536 + k537', 'k572 + k573', 'k588 + k589', 'k612 + k613', 'k628 + k629', 'k636 + k637', 'k672 + k673', 'k684 + k685', 'k712 + k713', 'k720 + k721', 'k728 + k729', 'k736 + k737', 'k740 + k741', 'k744 + k745', 'k760 + k761', 'k804 + k805', 'k837 + k838', 'k844 + k845', 'k852 + k853', 'k864 + k865', 'k868 + k869', 'k888 + k889', 'k896 + k898', 'k904 + k905', 'k960 + k961', 'k964 + k965', 'k968 + k969', 'k984 + k985', 'k1020 + k1021', 'k1036 + k1037', 'k1060 + k1061', 'k1072 + k1073', 'k1100 + k1101', 'k1108 + k1109', 'k1112 + k1113', 'k1116 + k1117', 'k1140 + k1141', 'k1144 + k1145', 'k1152 + k1153', 'k1164 + k1165', 'k1196 + k1197', 'k1204 + k1205', 'k1208 + k1209', 'k1252 + k1253', 'k1260 + k1261', 'k1268 + k1269', 'k1276 + k1277']
+Repeated involved key bits: ['k11', 'k15', 'k19', 'k39', 'k59', 'k67', 'k83', 'k95', 'k107', 'k154', 'k159', 'k175', 'k183', 'k191', 'k243', 'k247', 'k278', 'k286', 'k342', 'k347', 'k391', 'k403', 'k407', 'k443', 'k451', 'k459', 'k479', 'k483', 'k507', 'k527', 'k574', 'k630', 'k638', 'k675', 'k714', 'k723', 'k739', 'k743', 'k747', 'k806', 'k839', 'k846', 'k870', 'k899', 'k907', 'k947', 'k963', 'k967', 'k971', 'k979', 'k987', 'k1023', 'k1038', 'k1062', 'k1102', 'k1147', 'k1198', 'k1207', 'k1263', 'k1271', 'k1279']
+Solve START: no.38
+solve cost: 1.421459 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no38.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no38.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no38.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no38.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.39
+solve cost: 1.521019 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no39.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no39.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no39.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 1089 / 1177 (+aux 7, +involved 3)
+Repeated auxiliary expressions: ['k8 + k10', 'k12 + k14', 'k20 + k22', 'k24 + k25', 'k28 + k29', 'k40 + k41', 'k48 + k49', 'k117 + k118', 'k148 + k149', 'k157 + k158', 'k169 + k170', 'k193 + k194', 'k204 + k205', 'k216 + k217', 'k220 + k222', 'k252 + k253', 'k261 + k262', 'k276 + k277', 'k281 + k282', 'k300 + k301', 'k320 + k321', 'k324 + k325', 'k341 + k342', 'k360 + k361', 'k381 + k382', 'k404 + k405', 'k424 + k426', 'k428 + k429', 'k440 + k442', 'k448 + k449', 'k468 + k470', 'k476 + k477', 'k480 + k482', 'k513 + k514', 'k528 + k529', 'k544 + k545', 'k552 + k553', 'k588 + k589', 'k592 + k593', 'k612 + k613', 'k616 + k617', 'k648 + k649', 'k652 + k653', 'k660 + k661', 'k676 + k677', 'k684 + k685', 'k724 + k725', 'k744 + k746', 'k760 + k761', 'k773 + k774', 'k796 + k797', 'k824 + k825', 'k833 + k834', 'k840 + k841', 'k849 + k850', 'k857 + k858', 'k864 + k865', 'k872 + k873', 'k916 + k917', 'k928 + k929', 'k932 + k934', 'k944 + k945', 'k956 + k958', 'k960 + k962', 'k976 + k977', 'k1012 + k1014', 'k1020 + k1021', 'k1028 + k1029', 'k1072 + k1073', 'k1080 + k1081', 'k1100 + k1101', 'k1108 + k1109', 'k1116 + k1117', 'k1128 + k1129', 'k1141 + k1142', 'k1152 + k1153', 'k1164 + k1165', 'k1196 + k1198', 'k1200 + k1201', 'k1224 + k1225', 'k1256 + k1257', 'k1260 + k1261', 'k1272 + k1273']
+Repeated involved key bits: ['k7', 'k11', 'k15', 'k23', 'k27', 'k31', 'k43', 'k51', 'k119', 'k143', 'k150', 'k159', 'k171', 'k195', 'k206', 'k218', 'k223', 'k254', 'k263', 'k279', 'k283', 'k302', 'k322', 'k327', 'k343', 'k362', 'k383', 'k407', 'k427', 'k430', 'k443', 'k451', 'k471', 'k479', 'k483', 'k515', 'k530', 'k547', 'k555', 'k563', 'k591', 'k595', 'k614', 'k618', 'k650', 'k654', 'k663', 'k678', 'k687', 'k726', 'k747', 'k763', 'k775', 'k798', 'k827', 'k835', 'k843', 'k851', 'k859', 'k866', 'k874', 'k919', 'k930', 'k935', 'k947', 'k959', 'k963', 'k1015', 'k1023', 'k1031', 'k1074', 'k1083', 'k1103', 'k1110', 'k1119', 'k1127', 'k1130', 'k1143', 'k1155', 'k1167', 'k1199', 'k1202', 'k1226', 'k1259', 'k1262', 'k1274', 'k1279']
+Solve START: no.40
+solve cost: 1.420542 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no40.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no40.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no40.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 1119 / 1177 (+aux 15, +involved 15)
+Repeated auxiliary expressions: ['k0 + k1', 'k8 + k10', 'k12 + k14', 'k40 + k41', 'k88 + k89', 'k92 + k93', 'k132 + k133', 'k140 + k141', 'k152 + k153', 'k157 + k158', 'k169 + k170', 'k252 + k253', 'k269 + k270', 'k300 + k301', 'k320 + k321', 'k325 + k326', 'k341 + k342', 'k345 + k346', 'k364 + k365', 'k400 + k402', 'k404 + k406', 'k408 + k409', 'k424 + k426', 'k448 + k449', 'k476 + k477', 'k504 + k506', 'k524 + k525', 'k528 + k529', 'k536 + k537', 'k548 + k549', 'k560 + k561', 'k592 + k593', 'k604 + k605', 'k608 + k609', 'k612 + k613', 'k652 + k653', 'k660 + k661', 'k668 + k669', 'k676 + k677', 'k684 + k685', 'k696 + k697', 'k704 + k705', 'k712 + k713', 'k760 + k761', 'k769 + k770', 'k796 + k797', 'k809 + k810', 'k832 + k833', 'k837 + k838', 'k849 + k850', 'k864 + k865', 'k896 + k898', 'k932 + k934', 'k940 + k942', 'k944 + k945', 'k948 + k950', 'k1020 + k1021', 'k1044 + k1045', 'k1052 + k1053', 'k1068 + k1069', 'k1072 + k1073', 'k1076 + k1077', 'k1100 + k1101', 'k1104 + k1105', 'k1108 + k1109', 'k1144 + k1145', 'k1152 + k1153', 'k1164 + k1165', 'k1196 + k1197', 'k1208 + k1209', 'k1216 + k1217', 'k1224 + k1225', 'k1228 + k1229', 'k1236 + k1237', 'k1248 + k1249']
+Repeated involved key bits: ['k3', 'k11', 'k15', 'k43', 'k75', 'k91', 'k95', 'k111', 'k115', 'k134', 'k142', 'k154', 'k159', 'k171', 'k215', 'k223', 'k254', 'k271', 'k302', 'k322', 'k327', 'k343', 'k347', 'k387', 'k403', 'k407', 'k411', 'k427', 'k451', 'k479', 'k507', 'k511', 'k527', 'k530', 'k539', 'k595', 'k611', 'k614', 'k655', 'k662', 'k670', 'k678', 'k687', 'k699', 'k707', 'k714', 'k763', 'k771', 'k798', 'k811', 'k839', 'k851', 'k866', 'k899', 'k927', 'k935', 'k943', 'k947', 'k951', 'k1003', 'k1011', 'k1023', 'k1055', 'k1074', 'k1079', 'k1103', 'k1110', 'k1147', 'k1155', 'k1167', 'k1198', 'k1210', 'k1218', 'k1226', 'k1231']
+Solve START: no.41
+solve cost: 1.522859 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no41.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no41.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no41.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 1128 / 1177 (+aux 3, +involved 6)
+Repeated auxiliary expressions: ['k0 + k1', 'k4 + k6', 'k8 + k10', 'k12 + k14', 'k40 + k41', 'k88 + k89', 'k92 + k94', 'k112 + k114', 'k132 + k133', 'k140 + k141', 'k145 + k146', 'k153 + k154', 'k157 + k158', 'k169 + k170', 'k213 + k214', 'k252 + k253', 'k269 + k270', 'k280 + k281', 'k300 + k301', 'k308 + k309', 'k320 + k321', 'k325 + k326', 'k336 + k337', 'k341 + k342', 'k396 + k397', 'k400 + k402', 'k408 + k409', 'k420 + k421', 'k424 + k426', 'k432 + k433', 'k448 + k449', 'k476 + k477', 'k504 + k506', 'k512 + k513', 'k528 + k529', 'k532 + k533', 'k536 + k537', 'k568 + k569', 'k592 + k593', 'k604 + k605', 'k608 + k609', 'k612 + k613', 'k660 + k661', 'k668 + k669', 'k676 + k677', 'k684 + k685', 'k700 + k701', 'k704 + k705', 'k708 + k709', 'k712 + k713', 'k760 + k761', 'k769 + k770', 'k772 + k773', 'k796 + k797', 'k809 + k810', 'k812 + k813', 'k816 + k817', 'k849 + k850', 'k856 + k857', 'k864 + k865', 'k932 + k934', 'k940 + k942', 'k944 + k945', 'k948 + k950', 'k992 + k993', 'k996 + k997', 'k1000 + k1001', 'k1004 + k1005', 'k1020 + k1021', 'k1052 + k1053', 'k1068 + k1069', 'k1072 + k1073', 'k1076 + k1077', 'k1092 + k1093', 'k1100 + k1101', 'k1108 + k1109', 'k1120 + k1121', 'k1144 + k1145', 'k1152 + k1153', 'k1164 + k1165', 'k1168 + k1169', 'k1176 + k1177', 'k1208 + k1209', 'k1216 + k1217', 'k1224 + k1225', 'k1236 + k1237', 'k1244 + k1245']
+Repeated involved key bits: ['k3', 'k7', 'k11', 'k15', 'k27', 'k43', 'k91', 'k95', 'k115', 'k134', 'k142', 'k147', 'k155', 'k159', 'k171', 'k207', 'k215', 'k254', 'k271', 'k282', 'k302', 'k310', 'k322', 'k327', 'k338', 'k343', 'k399', 'k403', 'k411', 'k423', 'k427', 'k435', 'k451', 'k479', 'k507', 'k514', 'k530', 'k539', 'k570', 'k595', 'k606', 'k611', 'k614', 'k662', 'k670', 'k678', 'k687', 'k703', 'k707', 'k711', 'k763', 'k771', 'k774', 'k798', 'k811', 'k818', 'k851', 'k858', 'k866', 'k935', 'k943', 'k947', 'k951', 'k995', 'k999', 'k1003', 'k1007', 'k1023', 'k1055', 'k1070', 'k1074', 'k1079', 'k1103', 'k1110', 'k1122', 'k1146', 'k1155', 'k1167', 'k1171', 'k1179', 'k1210', 'k1218', 'k1226', 'k1239']
+Solve START: no.42
+solve cost: 1.520953 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no42.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no42.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no42.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no42.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.43
+solve cost: 0.921734 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no43.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no43.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no43.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no43.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.44
+solve cost: 0.665874 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no44.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no44.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no44.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 1159 / 1177 (+aux 17, +involved 14)
+Repeated auxiliary expressions: ['k4 + k6', 'k28 + k30', 'k36 + k38', 'k48 + k50', 'k72 + k73', 'k92 + k94', 'k104 + k106', 'k145 + k146', 'k149 + k150', 'k153 + k154', 'k189 + k190', 'k217 + k218', 'k224 + k225', 'k241 + k242', 'k268 + k269', 'k272 + k273', 'k280 + k281', 'k312 + k313', 'k332 + k333', 'k336 + k337', 'k372 + k373', 'k388 + k389', 'k396 + k397', 'k412 + k413', 'k420 + k421', 'k460 + k461', 'k472 + k473', 'k480 + k481', 'k512 + k513', 'k516 + k517', 'k536 + k537', 'k540 + k541', 'k568 + k569', 'k576 + k577', 'k580 + k581', 'k592 + k593', 'k640 + k641', 'k664 + k665', 'k700 + k701', 'k708 + k709', 'k728 + k729', 'k740 + k741', 'k748 + k749', 'k764 + k765', 'k800 + k801', 'k816 + k817', 'k836 + k837', 'k856 + k857', 'k880 + k881', 'k888 + k889', 'k892 + k893', 'k936 + k937', 'k940 + k941', 'k964 + k965', 'k976 + k977', 'k996 + k997', 'k1004 + k1005', 'k1056 + k1057', 'k1076 + k1077', 'k1112 + k1113', 'k1120 + k1121', 'k1132 + k1133', 'k1136 + k1137', 'k1140 + k1141', 'k1144 + k1145', 'k1168 + k1169', 'k1172 + k1173', 'k1176 + k1177', 'k1196 + k1197', 'k1208 + k1209', 'k1216 + k1217', 'k1232 + k1233', 'k1260 + k1261']
+Repeated involved key bits: ['k7', 'k31', 'k39', 'k43', 'k51', 'k79', 'k95', 'k107', 'k147', 'k151', 'k155', 'k191', 'k219', 'k227', 'k243', 'k270', 'k274', 'k282', 'k314', 'k338', 'k374', 'k379', 'k391', 'k399', 'k403', 'k415', 'k419', 'k423', 'k463', 'k475', 'k483', 'k514', 'k518', 'k538', 'k542', 'k570', 'k575', 'k578', 'k643', 'k703', 'k711', 'k727', 'k731', 'k743', 'k767', 'k771', 'k818', 'k838', 'k858', 'k882', 'k890', 'k894', 'k915', 'k923', 'k939', 'k943', 'k959', 'k967', 'k979', 'k999', 'k1007', 'k1058', 'k1095', 'k1114', 'k1122', 'k1134', 'k1142', 'k1146', 'k1163', 'k1171', 'k1175', 'k1179', 'k1199', 'k1211', 'k1235', 'k1263']
+Solve START: no.45
+solve cost: 0.665766 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no45.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no45.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no45.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no45.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.46
+solve cost: 0.665849 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no46.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no46.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no46.log
+Low-gain rejected result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/rejected_low_gain_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no46.log
+Updated continuous search checkpoint after low-gain rejection: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Low-gain diversity ban: min_swaps=2, clauses=9
+Solve START: no.47
+solve cost: 0.665908 s
+Find!
+Solver log path: /home/author/Twinkle/cube_like_attack/cons/key_recovery_bounds1177_ivstart9/cube_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no47.solver.log
+Output has been saved to /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no47.log
+Result path: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/result_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541_no47.log
+Updated continuous search checkpoint: /home/author/Twinkle/cube_like_attack/result/key_recovery_bounds1177_ivstart9/search_state_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.json
+Continuous search unique total: 1178 / 1177 (+aux 12, +involved 7)
+Repeated auxiliary expressions: ['k32 + k34', 'k40 + k42', 'k44 + k45', 'k48 + k49', 'k52 + k54', 'k68 + k70', 'k96 + k98', 'k116 + k117', 'k140 + k141', 'k148 + k149', 'k161 + k162', 'k165 + k166', 'k209 + k210', 'k224 + k225', 'k229 + k230', 'k253 + k254', 'k264 + k265', 'k292 + k293', 'k332 + k333', 'k337 + k338', 'k344 + k345', 'k348 + k349', 'k356 + k357', 'k381 + k382', 'k416 + k417', 'k424 + k425', 'k444 + k446', 'k480 + k482', 'k484 + k485', 'k488 + k489', 'k500 + k501', 'k532 + k533', 'k552 + k553', 'k556 + k557', 'k564 + k565', 'k580 + k581', 'k584 + k585', 'k620 + k621', 'k632 + k633', 'k640 + k641', 'k644 + k645', 'k652 + k653', 'k664 + k665', 'k680 + k681', 'k688 + k689', 'k692 + k693', 'k752 + k753', 'k776 + k777', 'k792 + k793', 'k820 + k821', 'k828 + k829', 'k857 + k858', 'k861 + k862', 'k884 + k885', 'k896 + k897', 'k912 + k913', 'k932 + k933', 'k952 + k953', 'k956 + k958', 'k968 + k970', 'k1012 + k1013', 'k1016 + k1017', 'k1028 + k1029', 'k1056 + k1057', 'k1076 + k1077', 'k1080 + k1081', 'k1084 + k1085', 'k1096 + k1097', 'k1124 + k1125', 'k1148 + k1149', 'k1156 + k1157', 'k1160 + k1161', 'k1196 + k1197', 'k1200 + k1201', 'k1212 + k1213', 'k1220 + k1221', 'k1240 + k1241', 'k1252 + k1253']
+Repeated involved key bits: ['k35', 'k43', 'k51', 'k55', 'k71', 'k99', 'k119', 'k123', 'k143', 'k150', 'k163', 'k167', 'k211', 'k226', 'k231', 'k255', 'k266', 'k294', 'k334', 'k339', 'k346', 'k358', 'k367', 'k383', 'k419', 'k427', 'k447', 'k463', 'k467', 'k483', 'k487', 'k491', 'k503', 'k523', 'k535', 'k555', 'k558', 'k582', 'k586', 'k622', 'k634', 'k642', 'k647', 'k654', 'k667', 'k683', 'k691', 'k695', 'k747', 'k755', 'k778', 'k794', 'k807', 'k822', 'k830', 'k859', 'k863', 'k886', 'k899', 'k903', 'k915', 'k935', 'k955', 'k959', 'k971', 'k1015', 'k1019', 'k1031', 'k1059', 'k1078', 'k1082', 'k1086', 'k1091', 'k1098', 'k1150', 'k1159', 'k1163', 'k1199', 'k1202', 'k1223', 'k1243', 'k1247', 'k1254']
+Reached bounds: 1178 / 1177
+total cost: 169.254232 s
+__________End____________
+
+Finished at: 2026-04-29 22:28:33
+Total runtime seconds: 172
+Wrapper log path: /home/author/Twinkle/cube_like_attack/logs/key_recovery_bounds1177_ivstart9/run_pa_key_recovery_twinkle1280_1r_ivstart9_sat5_task1_bounds1177_review_20260429_222541.log

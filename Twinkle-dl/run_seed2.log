@@ -1,0 +1,47 @@
+3-round Twinkle, Delta_in = e_117, output truncated to 64 bits
+|Theta_1| = 18, |Theta_2| = 109, N' = 2^11, N'' = 2^16, 2 threads
+
+[0] Delta_m: C_117 makes the difference after E_d deterministic and equal to S^1_117 : yes
+[1] profile of Delta_m over E_m o E_l (2^20 pairs, key-independent):
+      Gamma_out = e_0     c = +0.03134 = +2^-5.00
+      Gamma_out = e_6     c = +0.02994 = +2^-5.06
+      Gamma_out = e_40    c = -0.24974 = -2^-2.00
+      Gamma_out = e_53    c = +0.03116 = +2^-5.00
+      Gamma_out = e_56    c = +0.06156 = +2^-4.02
+      Gamma_out = e_61    c = +0.03142 = +2^-4.99
+
+[2] first pass: 2^18 structures x 2^11 pairs = 2^29 pairs, 415.3 s
+      the structure satisfying C_117 is ranked 21 of 262144
+
+[3] second pass: 1024 structures x 2^16 pairs, 51.1 s
+      #1  IV[Theta_1] = 0x0406a   distance 0.00912   <-- satisfies C_117
+      #2  IV[Theta_1] = 0x0407a   distance 0.01135
+      #3  IV[Theta_1] = 0x04068   distance 0.02800
+      #4  IV[Theta_1] = 0x04078   distance 0.03553
+
+[4] recovered IV[Theta_1] : iv2=0 iv3=1 iv18=0 iv36=1 iv39=0 iv40=1 iv44=1 iv48=0 iv56=0 iv58=0 iv59=0 iv68=0 iv87=0 iv90=0 iv106=1 iv110=0 iv112=0 iv118=0
+      C_117 satisfied by the recovered value : yes
+      21 independent key expressions:
+        K331 = 0   [correct]
+        K139 + K459 + K779 = 1   [correct]
+        K160 = 0   [correct]
+        K480 = 0   [correct]
+        K182 + K502 = 0   [correct]
+        K394 = 1   [correct]
+        K309 = 1   [correct]
+        K629 = 0   [correct]
+        K310 + K630 = 1   [correct]
+        K1270 = 0   [correct]
+        K182 = 0   [correct]
+        K714 = 1   [correct]
+        K11 = 1   [correct]
+        K950 = 1   [correct]
+        K139 + K459 = 1   [correct]
+        K1099 = 0   [correct]
+        K651 + K971 = 1   [correct]
+        K1034 = 1   [correct]
+        K800 = 1   [correct]
+        K1142 = 1   [correct]
+        K949 = 1   [correct]
+
+SUCCESS: 21 key expressions recovered, 0 of them wrong.

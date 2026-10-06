@@ -1,0 +1,50 @@
+Run ID: without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313
+Output variant: without-io
+Attack mode: key_recovery
+Cipher: 1280
+Rounds: 2
+IV start bound: 28
+SAT threads: 5
+Task ID: 3
+Output root: /home/author/Twinkle/without_io
+Output subdir: none
+Bounds: none
+Min new coverage: default
+Low-gain min swaps: default
+Adaptive diversity: 0
+Max low-gain min swaps: default
+Start search ID: 1
+Python: /home/author/miniforge3/envs/sage/bin/python
+SAT solver: /home/author/sat-solvers/lingeling/treengeling
+Started at: 2026-04-29 22:43:13
+CNF path: /home/author/Twinkle/without_io/cons/cube_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313.cnf
+Solver log path: /home/author/Twinkle/without_io/cons/cube_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313_no1.solver.log
+Result path: /home/author/Twinkle/without_io/result/result_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313_no1.log
+
+2026-04-29 22:43:15,680 - TwinkleRoundF_in_ANF_form - INFO - Twinkle Round Function in ANF form
+2026-04-29 22:43:15,681 - TwinkleRoundF_in_ANF_form - INFO - Selected Variant: PA
+2026-04-29 22:43:15,681 - TwinkleRoundF_in_ANF_form - INFO - State size: 1280 bits (X=4, Y=4, L=80)
+#Run ID: without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313
+#Output Variant: without-io
+#Attack Mode: key_recovery
+#Cipher: 1280 (PA)
+#Round: 2, #IV_start =: 28, #thread: 5, START:
+6400 5120
+cnf_twinkle_sbox Added
+cnf_A1 Added
+cnf_twinkle_mixslice Added
+CardEnc Added
+2-round twinkle-withoutIO cube Model Done:) var_num:19870, clause_num:107420
+CNF path: /home/author/Twinkle/without_io/cons/cube_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313.cnf
+Solve START: no.1
+solve cost: 15.720436 s
+Find!
+Solver log path: /home/author/Twinkle/without_io/cons/cube_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313_no1.solver.log
+Output has been saved to /home/author/Twinkle/without_io/result/result_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313_no1.log
+Result path: /home/author/Twinkle/without_io/result/result_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313_no1.log
+total cost: 19.505870 s
+__________End____________
+
+Finished at: 2026-04-29 22:43:35
+Total runtime seconds: 22
+Wrapper log path: /home/author/Twinkle/without_io/logs/run_without-io_twinkle1280_2r_ivstart28_sat5_task3_20260429_224313.log
